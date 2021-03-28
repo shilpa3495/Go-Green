@@ -1,0 +1,142 @@
+.toast-card {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.error-toast-style-1,
+.success-toast-style-1,
+.warning-toast-style-1,
+.info-toast-style-1 {
+  color: var(--font-dark-light-bg-color);
+}
+
+.error-toast-style-1 {
+  background: var(--secondary-color);
+}
+
+.success-toast-style-1 {
+  background: var(--primary-color);
+}
+
+.warning-toast-style-1 {
+  background: var(--warning-color);
+}
+
+.info-toast-style-1 {
+  background: var(--info-color);
+}
+
+.error-toast-style-2 {
+  border-left: 6px solid var(--secondary-color);
+}
+
+.success-toast-style-2 {
+  border-left: 6px solid var(--primary-color);
+}
+
+.warning-toast-style-2 {
+  border-left: 6px solid var(--warning-color);
+}
+
+.info-toast-style-2 {
+  border-left: 6px solid var(--info-color);
+}
+
+.error-toast,
+.error-toast-style-2 {
+  background: var(--secondary-light-color);
+  color: var(--secondary-color);
+}
+
+.success-toast,
+.success-toast-style-2 {
+  background: var(--primary-light-color);
+  color: var(--primary-color);
+}
+
+.warning-toast,
+.warning-toast-style-2 {
+  background: var(--warning-light-color);
+  color: var(--warning-color);
+}
+
+.info-toast,
+.info-toast-style-2 {
+  background: var(--info-light-color);
+  color: var(--info-color);
+}
+
+.toast-body {
+  padding: 15px;
+}
+
+.toast-body {
+  display: flex;
+  align-items: center;
+}
+
+.toast-title {
+  padding-left: 15px;
+  margin: 0;
+}
+
+.toast-close-button {
+  margin-left: auto;
+}
+
+.light-theme .toast-close-img {
+  background: url("../img/toast/cross.svg");
+}
+
+.dark-theme .toast-close-img {
+  background: url("../img/toast/white-cross.svg");
+}
+
+.toast-close-img,
+.toast-white-close-img {
+  width: 15px;
+  height: 15px;
+}
+
+.toast-top,
+.toast-bottom {
+  position: fixed;
+  right: 20px;
+  z-index: 5;
+  width: 460px;
+  max-width: 70%;
+}
+.toast-top {
+  top: 20px;
+}
+
+.toast-bottom {
+  bottom: 20px;
+}
+
+@media (max-width: 414px) {
+  .toast-body {
+    padding: 10px;
+  }
+  .toast-close-img,
+  .toast-white-close-img {
+    width: 10px;
+    height: 10px;
+  }
+  .toast-img-icon {
+    display: none;
+  }
+  .toast-title {
+    padding-left: 0px;
+  }
+  .toast-top {
+    top: 10px;
+  }
+  .toast-top,
+  .toast-bottom {
+    right: 10px;
+  }
+  .toast-bottom {
+    bottom: 10px;
+  }
+}

@@ -1,0 +1,128 @@
+.alert-card {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.alert-img-icon {
+  width: 40px;
+  height: 40px;
+}
+.error-alert-style-1,
+.success-alert-style-1,
+.warning-alert-style-1,
+.info-alert-style-1 {
+  color: var(--font-dark-light-bg-color);
+}
+
+.error-alert-style-1 {
+  background: var(--secondary-color);
+}
+
+.success-alert-style-1 {
+  background: var(--primary-color);
+}
+
+.warning-alert-style-1 {
+  background: var(--warning-color);
+}
+
+.info-alert-style-1 {
+  background: var(--info-color);
+}
+
+.error-alert-style-2 {
+  border-left: 6px solid var(--secondary-color);
+}
+
+.success-alert-style-2 {
+  border-left: 6px solid var(--primary-color);
+}
+
+.warning-alert-style-2 {
+  border-left: 6px solid var(--warning-color);
+}
+
+.info-alert-style-2 {
+  border-left: 6px solid var(--info-color);
+}
+
+.error-alert,
+.error-alert-style-2 {
+  background: var(--secondary-light-color);
+  color: var(--secondary-color);
+}
+
+.success-alert,
+.success-alert-style-2 {
+  background: var(--primary-light-color);
+  color: var(--primary-color);
+}
+
+.warning-alert,
+.warning-alert-style-2 {
+  background: var(--warning-light-color);
+  color: var(--warning-color);
+}
+
+.info-alert,
+.info-alert-style-2 {
+  background: var(--info-light-color);
+  color: var(--info-color);
+}
+
+.alert-body {
+  padding: 15px;
+}
+
+.alert-body {
+  display: flex;
+  align-items: center;
+}
+
+.alert-title {
+  padding-left: 15px;
+}
+
+.alert-title {
+  margin: 0;
+}
+
+.alert-close-button {
+  margin-left: auto;
+}
+
+.light-theme .alert-close-img {
+  background: url("../img/alert/cross.svg");
+}
+
+.dark-theme .alert-close-img {
+  background: url("../img/alert/white-cross.svg");
+}
+
+.alert-close-img,
+.alert-white-close-img {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 414px) {
+  .alert-body {
+    padding: 10px;
+  }
+  .alert-close-img,
+  .alert-white-close-img {
+    width: 10px;
+    height: 10px;
+  }
+  .alert-img-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .alert-img-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
