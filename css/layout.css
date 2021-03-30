@@ -1,6 +1,6 @@
 .layout {
   display: grid;
-  grid-row-gap: 110px;
+  grid-row-gap: 32px;
   grid-column-gap:4%;
   grid-template-areas:
     "nav nav"
@@ -18,11 +18,11 @@
 
 .fixed-navbar {
   grid-area: nav;
-  position: fixed;
+  position: sticky;
   width: calc(100% - 180px);
   background:var(--white-color);
   z-index: 5;
-
+  top:0;
   padding: 10px 90px;
 }
 

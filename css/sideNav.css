@@ -1,5 +1,5 @@
 .sidebar-nav {
-  position: fixed;
+  position: sticky;
   top: 110px;
 }
 
