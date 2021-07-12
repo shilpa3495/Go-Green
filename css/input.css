@@ -6,7 +6,8 @@
   position: relative;
 }
 
-input[type="text"] {
+
+.input-field {
   border: 1px solid var(--light-color);
   padding: 10px 12px;
   border-radius: 5px;
@@ -15,7 +16,14 @@ input[type="text"] {
   color: var(--dark-color);
 }
 
-input[type="text"]:focus {
+.input-field,
+.input-field::placeholder {
+  color: var(--dark-color);
+  font-size: 1rem;
+}
+
+
+.input-field:focus {
   border: 1px solid var(--dark-color);
   outline: none;
 }
@@ -40,8 +48,7 @@ input[type="text"]:focus {
   display: flex;
   position: absolute;
   align-items: center;
-  font-size: 1rem;
-  top: 4px;
+  top: 6px;
   left: 12px;
   pointer-events: none;
 }

@@ -14,8 +14,6 @@ function changeToDarkModeHandler() {
 
 changeToDarkMode.addEventListener("click", changeToDarkModeHandler);
 
-
-
 // sidebar
 
 var openSidebar = document.querySelector("#show-sidebar");
@@ -37,8 +35,6 @@ function closeSidebarHandler() {
 }
 
 closeSidebar.addEventListener("click", closeSidebarHandler);
-
-
 
 // alert modal
 var openAlertModal = document.querySelector("#active-alert-modal");
@@ -105,43 +101,15 @@ function closeSuccessHandlerToast() {
 
 closeSuccessToast.addEventListener("click", closeSuccessHandlerToast);
 
-//Input
-
-var inFocus = document.querySelector("#input-text");
-var hidePlaceholder = document.querySelector("#input-placeholder");
-
-function focusInHandler() {
-  hidePlaceholder.style.display = "none";
-}
-
-inFocus.addEventListener("focus", focusInHandler);
-
-function focusOutHandler() {
-  hidePlaceholder.style.display = "inline-block";
-}
-
-inFocus.addEventListener("focusout", focusOutHandler);
-
-//Error Input
-
-var errorInFocus = document.querySelector("#error-input-text");
-var hideErrorPlaceholder = document.querySelector("#error-input-placeholder");
-
-function errorFocusInHandler() {
-  hideErrorPlaceholder.style.display = "none";
-}
-
-errorInFocus.addEventListener("focus", errorFocusInHandler);
-
-function errorFocusOutHandler() {
-  hideErrorPlaceholder.style.display = "inline-block";
-}
-
-errorInFocus.addEventListener("focusout", errorFocusOutHandler);
-
-
 
 // navigation
+
+var sidebarItems = document.querySelectorAll(
+  ".sidebar-nav-unordered-list .sidebar-nav-item"
+);
+var mainContainerSection = document.querySelectorAll(
+  ".main-content .section-container"
+);
 
 var avatarSection = document.querySelector("#avatar-list");
 var alertSection = document.querySelector("#alert-list");
@@ -161,556 +129,158 @@ var toastSection = document.querySelector("#toast-list");
 
 avatarSection.classList.add("sidebar-list-active");
 
-function avatarSectionHandler() {
-  avatarSection.classList.add("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
+function unactiveElementClassRemove() {
+  sidebarItems.forEach(listItem =>
+    listItem.classList.remove("sidebar-list-active")
+  );
 
+  mainContainerSection.forEach(section => (section.style.display = "none"));
+}
+
+function avatarSectionHandler() {
+  unactiveElementClassRemove();
+
+  avatarSection.classList.add("sidebar-list-active");
   document.querySelector("#avatar").style.display = "block";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function alertSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.add("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
+  unactiveElementClassRemove();
 
-  document.querySelector("#avatar").style.display = "none";
+  alertSection.classList.add("sidebar-list-active");
   document.querySelector("#alert").style.display = "block";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function badgeSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.add("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
+  unactiveElementClassRemove();
 
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
+  badgeSection.classList.add("sidebar-list-active");
   document.querySelector("#badge").style.display = "block";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function buttonSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.add("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
+  unactiveElementClassRemove();
 
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
+  buttonSection.classList.add("sidebar-list-active");
   document.querySelector("#button").style.display = "block";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function cardSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.add("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
+  unactiveElementClassRemove();
 
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
+  cardSection.classList.add("sidebar-list-active");
   document.querySelector("#card").style.display = "block";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function imageSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.add("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
+  unactiveElementClassRemove();
 
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
+  imageSection.classList.add("sidebar-list-active");
   document.querySelector("#image").style.display = "block";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function inputSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.add("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
+  unactiveElementClassRemove();
 
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
+  inputSection.classList.add("sidebar-list-active");
   document.querySelector("#input").style.display = "block";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function listSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.add("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
+  unactiveElementClassRemove();
 
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
+  listSection.classList.add("sidebar-list-active");
   document.querySelector("#list").style.display = "block";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function navigationSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.add("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
+  unactiveElementClassRemove();
 
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
+  navigationSection.classList.add("sidebar-list-active");
   document.querySelector("#navigation").style.display = "block";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function modalSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
+  unactiveElementClassRemove();
   modalSection.classList.add("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
-
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
   document.querySelector("#modal").style.display = "block";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function ratingSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
+  unactiveElementClassRemove();
   ratingSection.classList.add("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
-
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
   document.querySelector("#rating").style.display = "block";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function sliderSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.add("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
+  unactiveElementClassRemove();
 
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
+  sliderSection.classList.add("sidebar-list-active");
   document.querySelector("#slider").style.display = "block";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function gridSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.add("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
 
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
+  unactiveElementClassRemove();
+  gridSection.classList.add("sidebar-list-active");
   document.querySelector("#grid").style.display = "block";
-  document.querySelector("#text-utilities").style.display = "none";
-  document.querySelector("#toast").style.display = "none";
+
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function utilitesSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.add("sidebar-list-active");
-  toastSection.classList.remove("sidebar-list-active");
 
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
+  unactiveElementClassRemove();
+  utilitiesSection.classList.add("sidebar-list-active");
   document.querySelector("#text-utilities").style.display = "block";
-  document.querySelector("#toast").style.display = "none";
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function toastSectionHandler() {
-  avatarSection.classList.remove("sidebar-list-active");
-  alertSection.classList.remove("sidebar-list-active");
-  badgeSection.classList.remove("sidebar-list-active");
-  buttonSection.classList.remove("sidebar-list-active");
-  cardSection.classList.remove("sidebar-list-active");
-  imageSection.classList.remove("sidebar-list-active");
-  inputSection.classList.remove("sidebar-list-active");
-  listSection.classList.remove("sidebar-list-active");
-  navigationSection.classList.remove("sidebar-list-active");
-  modalSection.classList.remove("sidebar-list-active");
-  ratingSection.classList.remove("sidebar-list-active");
-  sliderSection.classList.remove("sidebar-list-active");
-  gridSection.classList.remove("sidebar-list-active");
-  utilitiesSection.classList.remove("sidebar-list-active");
-  toastSection.classList.add("sidebar-list-active");
-
-  document.querySelector("#avatar").style.display = "none";
-  document.querySelector("#alert").style.display = "none";
-  document.querySelector("#badge").style.display = "none";
-  document.querySelector("#button").style.display = "none";
-  document.querySelector("#card").style.display = "none";
-  document.querySelector("#image").style.display = "none";
-  document.querySelector("#input").style.display = "none";
-  document.querySelector("#list").style.display = "none";
-  document.querySelector("#navigation").style.display = "none";
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("#rating").style.display = "none";
-  document.querySelector("#slider").style.display = "none";
-  document.querySelector("#grid").style.display = "none";
-  document.querySelector("#text-utilities").style.display = "none";
+  
+  unactiveElementClassRemove();
   document.querySelector("#toast").style.display = "block";
+  toastSection.classList.add("sidebar-list-active");
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
