@@ -11,9 +11,9 @@
   width: 30%;
 }
 
-.vertical-product-card,
-.text-card {
-  margin-right: 10px;
+.section-vertical-card,
+.section-text-card {
+  column-gap: 10px;
 }
 
 .vertical-product-card,

@@ -1,11 +1,11 @@
 .layout {
   display: grid;
   grid-row-gap: 32px;
-  grid-column-gap:4%;
+  grid-column-gap:3%;
   grid-template-areas:
     "nav nav"
     "sidebar main";
-  grid-auto-columns: 300px minmax(300px, auto) 10% 0.5fr fit-content(400px);
+  grid-auto-columns: 20% minmax(20%, auto) 10% 0.5fr fit-content(400px);
 
 }
 
@@ -27,7 +27,7 @@
 }
 
 .sidebar-nav {
-  width:calc(300px - 90px);
+  width:calc(100% - 90px);
   padding-left: 90px;
   grid-area: sidebar;
 }
