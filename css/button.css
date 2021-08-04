@@ -1,6 +1,6 @@
 button {
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   font-family: "Roboto-Medium";
 }
 
@@ -24,7 +24,7 @@ button {
   border: none;
 }
 
-/* .icon-button:focus,
+.icon-button:focus,
 .primary-button:focus,
 .secondary-button:focus,
 .warning-button:focus,
@@ -45,8 +45,8 @@ button {
 .button-outline-info:focus,
 .button-outline-light:focus,
 .floating-button:focus {
-  outline: none;
-} */
+  outline: var(--primary-color);
+}
 
 .primary-button:hover,
 .secondary-button:hover,
@@ -93,7 +93,7 @@ button {
 .button-outline-light:hover {
   background: var(--light-color);
   color: var(--dark-color);
-  border: 1px solid transparent;
+  border: 0.06rem solid transparent;
 }
 
 .primary-button:hover {
@@ -113,7 +113,7 @@ button {
 }
 
 .light-button:hover {
-  border: 1px solid var(--light-color);
+  border: 0.06rem solid var(--light-color);
   background: var(--white-color);
 }
 
@@ -177,26 +177,26 @@ button {
 
 .button-outline-primary,
 .button-light-primary:hover {
-  border: 1px solid var(--primary-color);
+  border: 0.06rem solid var(--primary-color);
 }
 
 .button-outline-secondary,
 .button-light-secondary:hover {
-  border: 1px solid var(--secondary-color);
+  border: 0.06rem solid var(--secondary-color);
 }
 
 .button-outline-warning,
 .button-light-warning:hover {
-  border: 1px solid var(--warning-color);
+  border: 0.06rem solid var(--warning-color);
 }
 
 .button-outline-info,
 .button-light-info:hover {
-  border: 1px solid var(--info-color);
+  border: 0.06rem solid var(--info-color);
 }
 
 .button-outline-light {
-  border: 1px solid var(--light-color);
+  border: 0.06rem solid var(--light-color);
 }
 
 .button-link-primary:hover,
@@ -216,31 +216,31 @@ button {
 .button-light-secondary,
 .button-light-warning,
 .button-light-info {
-  border: 1px solid transparent;
+  border: 0.06rem solid transparent;
 }
 
 .button-xtra-small {
-  padding: 3px 10px;
+  padding: 0.1rem 0.6rem;
   font-size: 0.7em;
 }
 
 .button-small {
-  padding: 5px 20px;
+  padding: 0.3rem 1.2rem;
   font-size: 0.9em;
 }
 
 .button-medium {
-  padding: 10px 30px;
+  padding: 0.6rem 1.8rem;
   font-size: 1em;
 }
 
 .button-large {
-  padding: 12px 40px;
+  padding: 0.7rem 2.5rem;
   font-size: 1.1em;
 }
 
 .button-xtra-large {
-  padding: 20px 70px;
+  padding: 1.2rem 4.3rem;
   font-size: 1.2em;
 }
 
@@ -289,36 +289,36 @@ button {
 }
 
 .right-text-icon-button-img {
-  width: 15px;
-  height: 15px;
-  margin-left: 7px;
+  width: 1.9vh;
+  height: 1.9vh;
+  margin-left: 0.4rem;
 }
 .left-text-icon-button-img {
-  margin-right: 7px;
+  margin-right: 0.4rem;
 }
 
 .floating-button{
   color:var(--font-dark-light-bg-color);
   background: var(--primary-color);
   border-radius: 50%;
-  width:50px;
-  height: 50px;
+  width:6.5vh;
+  height: 6.5vh;
   font-size: 2rem;
   position: fixed;
-  right:20px;
-  bottom: 20px;
+  right:1.2rem;
+  bottom: 1.2rem;
 }
 
 
 @media (max-width:576px){
   button{
-    margin: 5px 0;
+    margin: 0.3rem 0;
   }
 }
 
 @media (max-width:360px){
   .button-medium{
-    padding: 7px 15px;
+    padding: 0.4rem 0.9rem;
   }
 }
 

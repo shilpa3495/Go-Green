@@ -11,17 +11,17 @@
 }
 .nav-background {
   background: var(--light-color);
-  padding: 10px;
+  padding: 0.6rem;
 }
 
 .logo-img {
-  width: 50px;
+  width: 6.5vh;
 }
 
 .logo-heading {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 0.6rem;
   font-family: "Roboto-Bold";
-  letter-spacing: 2px;
+  letter-spacing: 0.12rem;
   font-size: 1.5rem;
 }
 
@@ -34,9 +34,9 @@
 }
 
 .nav-list-item {
-  margin-right: 15px;
-  width: 20px;
-  height: 20px;
+  margin-right: 0.9rem;
+  width: 2.6vh;
+  height: 2.6vh;
   cursor: pointer;
 }
 
@@ -100,10 +100,10 @@
 
 @media (max-width: 414px) {
   .logo-img {
-    width: 40px;
+    width: 5.2vh;
   }
   .logo-heading {
     font-size: 1.2rem;
-    margin: 0 0 0 5px;
+    margin: 0 0 0 0.3rem;
   }
 }

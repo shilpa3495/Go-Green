@@ -1,73 +1,73 @@
 .toast-card {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0.3rem;
 }
 
-.error-toast-style-1,
-.success-toast-style-1,
-.warning-toast-style-1,
-.info-toast-style-1 {
+.error-toast-dark-background,
+.success-toast-dark-background,
+.warning-toast-dark-background,
+.info-toast-dark-background {
   color: var(--font-dark-light-bg-color);
 }
 
-.error-toast-style-1 {
+.error-toast-dark-background {
   background: var(--secondary-color);
 }
 
-.success-toast-style-1 {
+.success-toast-dark-background {
   background: var(--primary-color);
 }
 
-.warning-toast-style-1 {
+.warning-toast-dark-background {
   background: var(--warning-color);
 }
 
-.info-toast-style-1 {
+.info-toast-dark-background {
   background: var(--info-color);
 }
 
-.error-toast-style-2 {
-  border-left: 6px solid var(--secondary-color);
+.error-toast-light-background {
+  border-left: 0.4rem solid var(--secondary-color);
 }
 
-.success-toast-style-2 {
-  border-left: 6px solid var(--primary-color);
+.success-toast-light-background {
+  border-left: 0.4rem solid var(--primary-color);
 }
 
-.warning-toast-style-2 {
-  border-left: 6px solid var(--warning-color);
+.warning-toast-light-background {
+  border-left: 0.4rem solid var(--warning-color);
 }
 
-.info-toast-style-2 {
-  border-left: 6px solid var(--info-color);
+.info-toast-light-background {
+  border-left: 0.4rem solid var(--info-color);
 }
 
 .error-toast,
-.error-toast-style-2 {
+.error-toast-light-background {
   background: var(--secondary-light-color);
   color: var(--secondary-color);
 }
 
 .success-toast,
-.success-toast-style-2 {
+.success-toast-light-background {
   background: var(--primary-light-color);
   color: var(--primary-color);
 }
 
 .warning-toast,
-.warning-toast-style-2 {
+.warning-toast-light-background {
   background: var(--warning-light-color);
   color: var(--warning-color);
 }
 
 .info-toast,
-.info-toast-style-2 {
+.info-toast-light-background {
   background: var(--info-light-color);
   color: var(--info-color);
 }
 
 .toast-body {
-  padding: 15px;
+  padding: 0.9rem;
 }
 
 .toast-body {
@@ -76,7 +76,7 @@
 }
 
 .toast-title {
-  padding-left: 15px;
+  padding-left: 0.9rem;
   margin: 0;
 }
 
@@ -94,49 +94,49 @@
 
 .toast-close-img,
 .toast-white-close-img {
-  width: 15px;
-  height: 15px;
+  width: 0.9rem;
+  height: 0.9rem;
 }
 
 .toast-top,
 .toast-bottom {
   position: fixed;
-  right: 20px;
+  right: 1.2rem;
   z-index: 5;
-  width: 460px;
+  width: 60vh;
   max-width: 70%;
 }
 .toast-top {
-  top: 20px;
+  top: 1.2rem;
 }
 
 .toast-bottom {
-  bottom: 20px;
+  bottom: 1.2rem;
 }
 
 @media (max-width: 414px) {
   .toast-body {
-    padding: 10px;
+    padding: 0.6rem;
   }
   .toast-close-img,
   .toast-white-close-img {
-    width: 10px;
-    height: 10px;
+    width: 1.9vh;
+    height: 1.9vh;
   }
   .toast-img-icon {
     display: none;
   }
   .toast-title {
-    padding-left: 0px;
+    padding-left: 0;
   }
   .toast-top {
-    top: 10px;
+    top: 0.6rem;
   }
   .toast-top,
   .toast-bottom {
-    right: 10px;
+    right: 0.6rem;
   }
   .toast-bottom {
-    bottom: 10px;
+    bottom: 0.6rem;
   }
 }

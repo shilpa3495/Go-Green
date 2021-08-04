@@ -10,8 +10,8 @@
 
 .modal-card {
   background: var(--white-color);
-  border-radius: 5px;
-  width: 400px;
+  border-radius: 0.3rem;
+  width: 52.2vh;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -27,17 +27,17 @@
 .modal-header,
 .modal-card-body,
 .modal-footer {
-  padding: 15px;
+  padding: 0.9rem;
 }
 
 .modal-card-body {
   flex-direction: column;
   overflow: auto;
-  max-height: calc(70vh - 90px);
+  max-height: calc(70vh - 11.7vh);
 }
 
 .modal-header {
-  border-bottom: 1px solid var(--light-color);
+  border-bottom: 0.06rem solid var(--light-color);
 }
 .modal-title {
   margin: 0;
@@ -47,11 +47,11 @@
 .modal-description {
   color: var(--grey-color);
   line-height: 1.5;
-  margin: 20px 0;
+  margin: 1.2rem 0;
 }
 
 .modal-footer {
   display: flex;
   justify-content: flex-end;
-  border-top: 1px solid var(--light-color);
+  border-top: 0.06rem solid var(--light-color);
 }

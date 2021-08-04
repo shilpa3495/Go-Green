@@ -1,47 +1,47 @@
-.notification-container,
+.stacked-list-container,
 .spaced-list-container {
-  border: 1px solid var(--light-color);
-  border-radius: 5px;
+  border: 0.06rem solid var(--light-color);
+  border-radius: 0.3rem;
 }
 
-.notification-header,
-.single-notification-container,
+.stacked-list-header,
+.single-stacked-list-container,
 .single-spaced-list-container {
-  padding: 15px;
+  padding: 0.9rem;
 }
 
-.notification-header,
-.single-notification-container {
-  border-bottom: 1px solid var(--light-color);
+.stacked-list-header,
+.single-stacked-list-container {
+  border-bottom: 0.06rem solid var(--light-color);
 }
 
-.notification-body {
+.stacked-list-body {
   max-height: 85vh;
   overflow: auto;
 }
 
-.single-notification-container {
+.single-stacked-list-container {
   display: flex;
   align-items: center;
   transition: 0.2s ease-in;
 }
 
-.single-notification-container:hover,
+.single-stacked-list-container:hover,
 .single-spaced-list-container:hover {
   background: var(--primary-light-color);
 }
 
-.notification-header,
+.stacked-list-header,
 .spaced-list-heading {
   font-family: "Roboto-Bold";
   font-size: 1.2rem;
   color: var(--dark-color);
-  padding-right: 5px;
+  padding-right: 0.3rem;
 }
 
 .notifiy-user,
-.notification-text,
-.notification-timestamp,
+.stacked-list-text,
+.stacked-list-timestamp,
 .spaced-list-heading,
 .spaced-list-timestamp {
   font-family: "Roboto-Medium";
@@ -50,12 +50,12 @@
 .notifiy-user {
   font-size: 1rem;
   color: var(--primary-color);
-  padding-right: 5px;
+  padding-right: 0.3rem;
 }
 
-.notification-text,
-.notification-timestamp,
-.notification-info,
+.stacked-list-text,
+.stacked-list-timestamp,
+.stacked-list-info,
 .spaced-list-text,
 .spaced-list-timestamp {
   font-size: 0.9rem;
@@ -63,18 +63,18 @@
   line-height: 1.5;
 }
 
-.notification-timestamp,
+.stacked-list-timestamp,
 .spaced-list-timestamp {
   display: block;
-  padding-top: 5px;
+  padding-top: 0.3rem;
 }
 
-.notification-info,
+.stacked-list-info,
 .spaced-list-text {
   font-family: "Roboto-Regular";
 }
 
 .spaced-list-text {
   display: block;
-  padding-top: 5px;
+  padding-top: 0.3rem;
 }

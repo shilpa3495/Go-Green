@@ -13,13 +13,13 @@
 
 .section-vertical-card,
 .section-text-card {
-  column-gap: 10px;
+  column-gap: 0.6rem;
 }
 
 .vertical-product-card,
 .horizontal-product-card {
   transition: 0.2s ease-in;
-  padding: 12px;
+  padding: 0.7rem;
 }
 
 .light-theme .vertical-product-card:hover,
@@ -38,12 +38,12 @@
 .vertical-product-image,
 .horizontal-product-card,
 .horizontal-product-image {
-  border-radius: 15px;
+  border-radius: 0.9rem;
 }
 
 .vertical-product-image {
   width: 100%;
-  height: 150px;
+  height: 19.5vh;
   position: relative;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .vertical-product-content-container {
-  padding: 7px 0;
+  padding: 0.4rem 0;
 }
 
 .vertical-product-heading,
@@ -68,12 +68,12 @@
 
 .vertical-product-heading {
   font-size: 0.9em;
-  padding: 10px 0;
+  padding: 0.6rem 0;
 }
 
 .horizontal-product-heading {
   font-size: 1.1em;
-  padding: 10px 0;
+  padding: 0.6rem 0;
 }
 
 .vertical-product-heading:hover,
@@ -83,14 +83,14 @@
 
 .vertical-currency-img,
 .horizontal-currency-img {
-  width: 12px;
-  height: 12px;
+  width: 1.5vh;
+  height: 1.5vh;
 }
 
 .grey-vertical-currency-img,
 .grey-horizontal-currency-img {
-  width: 10px;
-  height: 10px;
+  width: 1.3vh;
+  height: 1.3vh;
 }
 
 .rating-container {
@@ -99,16 +99,16 @@
 }
 
 .rating-container {
-  padding: 7px 0 0 0;
+  padding: 0.4rem 0 0 0;
   display: flex;
   align-items: center;
 }
 .rating-container-img {
-  margin-right: 5px;
+  margin-right: 0.3rem;
 }
 
 .horizontal-card-badge {
-  margin-left: 10px;
+  margin-left: 0.6rem;
 }
 
 .vertical-price-container,
@@ -122,7 +122,7 @@
   color: var(--dark-color);
   font-family: "Roboto-Medium";
   font-size: 0.9rem;
-  margin-left: 7px;
+  margin-left: 0.4rem;
 }
 
 .vertical-total-reviews,
@@ -143,7 +143,7 @@
 .vertical-actual-price,
 .horizontal-actual-price {
   text-decoration: line-through;
-  margin-left: 7px;
+  margin-left: 0.4rem;
 }
 
 .vertical-product-description,
@@ -158,7 +158,7 @@
 
 .vertical-product-description,
 .horizontal-product-description {
-  padding: 7px 0 0 0;
+  padding: 0.4rem 0 0 0;
   line-height: 1.5;
 }
 
@@ -168,16 +168,16 @@
 
 .horizontal-product-image {
   width: 30%;
-  min-height: 190px;
+  min-height: 24.8vh;
 }
 
 .horizontal-product-content-container {
-  padding-left: 20px;
+  padding-left: 1.2rem;
   width: calc(100% - 30%);
 }
 
 .horizontal-button-container {
-  margin-top: 15px;
+  margin-top: 0.9rem;
 }
 
 .card-box-shadow {
@@ -186,21 +186,21 @@
 
 .overlay-card {
   max-width: 50%;
-  height: 106px;
+  height: 13.8vh;
   display: flex;
   align-items: center;
   color: var(--font-dark-light-bg-color);
   font-family: "Roboto-Bold";
   justify-content: center;
-  letter-spacing: 1px;
+  letter-spacing: 0.06rem;
   font-size: 1.2em;
   line-height: 1.5;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   text-align: center;
   cursor: pointer;
   transition: 0.2s ease-in;
   flex: 0 0 30%;
-  padding: 0 20px;
+  padding: 0 1.2rem;
   overflow: hidden;
   white-space: pre-wrap;
   word-break: break-word;
@@ -211,10 +211,10 @@
 }
 
 .text-card {
-  padding: 20px;
+  padding: 1.2rem;
   width: 30%;
-  border: 1px solid var(--light-color);
-  border-radius: 5px;
+  border: 0.06rem solid var(--light-color);
+  border-radius: 0.3rem;
   transition: 0.2s ease-in;
 }
 
@@ -230,7 +230,7 @@
   font-size: 0.9em;
   line-height: 1.5;
   font-family: "Roboto-Regular";
-  padding-top: 10px;
+  padding-top: 0.6rem;
 }
 
 .overlay-scroll-container {
@@ -271,14 +271,14 @@
     padding-left: 0px;
   }
   .horizontal-product-content-container .rating-container {
-    padding-top: 15px;
+    padding-top: 0.9rem;
   }
 }
 @media (max-width: 414px) {
   .vertical-product-card,
   .text-card {
     width: 100%;
-    margin: 15px 0;
+    margin: 0.9rem 0;
   }
   .overlay-card {
     font-size: 1em;
