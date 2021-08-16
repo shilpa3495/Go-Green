@@ -68,12 +68,15 @@
 
 .vertical-product-heading {
   font-size: 0.9em;
-  padding: 0.6rem 0;
+}
+
+.vertical-product-heading,
+.vertical-product-heading {
+  margin: 0.6rem 0;
 }
 
 .horizontal-product-heading {
   font-size: 1.1em;
-  padding: 0.6rem 0;
 }
 
 .vertical-product-heading:hover,
@@ -158,7 +161,7 @@
 
 .vertical-product-description,
 .horizontal-product-description {
-  padding: 0.4rem 0 0 0;
+  margin: 0.4rem 0 0 0;
   line-height: 1.5;
 }
 

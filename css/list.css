@@ -24,6 +24,7 @@
   display: flex;
   align-items: center;
   transition: 0.2s ease-in;
+  cursor: pointer;
 }
 
 .single-stacked-list-container:hover,
@@ -36,7 +37,6 @@
   font-family: "Roboto-Bold";
   font-size: 1.2rem;
   color: var(--dark-color);
-  padding-right: 0.3rem;
 }
 
 .notifiy-user,
