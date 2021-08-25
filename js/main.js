@@ -101,7 +101,6 @@ function closeSuccessHandlerToast() {
 
 closeSuccessToast.addEventListener("click", closeSuccessHandlerToast);
 
-
 // navigation
 
 var sidebarItems = document.querySelectorAll(
@@ -126,6 +125,7 @@ var sliderSection = document.querySelector("#slider-list");
 var gridSection = document.querySelector("#grid-list");
 var utilitiesSection = document.querySelector("#text-utilities-list");
 var toastSection = document.querySelector("#toast-list");
+var loginSection = document.querySelector("#login-list");
 
 avatarSection.classList.add("sidebar-list-active");
 
@@ -256,18 +256,15 @@ function sliderSectionHandler() {
 }
 
 function gridSectionHandler() {
-
   unactiveElementClassRemove();
   gridSection.classList.add("sidebar-list-active");
   document.querySelector("#grid").style.display = "block";
-
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
 }
 
 function utilitesSectionHandler() {
-
   unactiveElementClassRemove();
   utilitiesSection.classList.add("sidebar-list-active");
   document.querySelector("#text-utilities").style.display = "block";
@@ -277,10 +274,18 @@ function utilitesSectionHandler() {
 }
 
 function toastSectionHandler() {
-  
   unactiveElementClassRemove();
   document.querySelector("#toast").style.display = "block";
   toastSection.classList.add("sidebar-list-active");
+
+  addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
+  addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
+}
+
+function loginSectionHandler() {
+  unactiveElementClassRemove();
+  document.querySelector("#login").style.display = "block";
+  loginSection.classList.add("sidebar-list-active");
 
   addSidebarCollapseContainer.classList.add("sidebar-mobile-collapse");
   addSidebarCollapseContainer.classList.remove("sidebar-collapse-container");
@@ -301,3 +306,4 @@ sliderSection.addEventListener("click", sliderSectionHandler);
 gridSection.addEventListener("click", gridSectionHandler);
 utilitiesSection.addEventListener("click", utilitesSectionHandler);
 toastSection.addEventListener("click", toastSectionHandler);
+loginSection.addEventListener("click", loginSectionHandler);

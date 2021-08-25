@@ -14,6 +14,7 @@
 @import "img.css";
 @import "footer.css";
 @import "landing.css";
+@import "login.css";
 
 :root {
   --primary-color: #05c887;
@@ -138,7 +139,7 @@ p {
   font-family: "Roboto-Regular";
 }
 
-.section-container{
+.section-container {
   min-height: 70vh;
 }
 
@@ -173,35 +174,35 @@ p {
   color: var(--dark-color);
 }
 
-.background-primary{
+.background-primary {
   background: var(--primary-color);
 }
 
-.background-secondary{
+.background-secondary {
   background: var(--secondary-color);
 }
 
-.background-warning{
+.background-warning {
   background: var(--warning-color);
 }
 
-.background-info{
+.background-info {
   background: var(--info-color);
 }
 
-.background-primary-light{
+.background-primary-light {
   background: var(--primary-light-color);
 }
 
-.background-secondary-light{
+.background-secondary-light {
   background: var(--secondary-light-color);
 }
 
-.background-warning-light{
+.background-warning-light {
   background: var(--warning-light-color);
 }
 
-.background-info-light{
+.background-info-light {
   background: var(--info-light-color);
 }
 
@@ -209,8 +210,8 @@ pre[class*="language-"] {
   background: #1b1717 !important;
 }
 
-@media (max-width:1199px){
-  pre{
+@media (max-width: 1199px) {
+  pre {
     display: none;
   }
 }
@@ -227,7 +228,7 @@ pre[class*="language-"] {
 }
 
 @media (max-width: 414px) {
-  h1{
+  h1 {
     font-size: 2rem;
   }
   h3 {

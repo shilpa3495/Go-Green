@@ -36,7 +36,9 @@
             ></div>
           </li>
           <li id="show-sidebar" class="nav-list-item hamburger-list-item">
-            <div class="hamburger-image background-property background-hamburger-image"></div>
+            <div
+              class="hamburger-image background-property background-hamburger-image"
+            ></div>
           </li>
         </ul>
       </nav>
@@ -69,6 +71,9 @@
               Text Utilities
             </li>
             <li id="toast-list" class="sidebar-nav-item">Toast</li>
+            <li id="login-list" class="sidebar-nav-item">
+              Login Page
+            </li>
           </ul>
         </div>
       </div>
@@ -477,7 +482,9 @@
               </div>
             </div>
 
-            <div class="alert-card success-alert-light-background margin-bottom">
+            <div
+              class="alert-card success-alert-light-background margin-bottom"
+            >
               <div class="alert-body">
                 <img class="alert-img-icon" src="../img/alert/check.svg" />
                 <h4 class="alert-title">
@@ -2160,13 +2167,19 @@
               <h1 class="logo-heading">GOGreen</h1>
               <ul class="navbar-unordered-list">
                 <li class="nav-list-item">
-                  <div class="github-image background-property background-github-image"></div>
+                  <div
+                    class="github-image background-property background-github-image"
+                  ></div>
                 </li>
                 <li class="nav-list-item">
-                  <div class="moon-image background-property background-moon-image"></div>
+                  <div
+                    class="moon-image background-property background-moon-image"
+                  ></div>
                 </li>
                 <li class="nav-list-item hamburger-list-item">
-                  <div class="hamburger-image background-property background-hamburger-image"></div>
+                  <div
+                    class="hamburger-image background-property background-hamburger-image"
+                  ></div>
                 </li>
               </ul>
             </nav>
@@ -2613,7 +2626,9 @@
               </div>
             </div>
 
-            <div class="toast-card success-toast-light-background margin-bottom">
+            <div
+              class="toast-card success-toast-light-background margin-bottom"
+            >
               <div class="toast-body">
                 <img
                   class="toast-img-icon sm-avatar"
@@ -2804,6 +2819,69 @@
               &lt;/div&gt;
             </code>
           </pre>
+        </section>
+
+        <section
+          class="login-section section-container"
+          id="login"
+          style="display: none"
+        >
+          <h2 class="section-heading">Login</h2>
+
+          <h3 class="section-subheading">Usage</h3>
+
+          <div class="login-container">
+            <div class="login-left-container background-property"></div>
+            <div class="login-right-container">
+              <h2>Sign up</h2>
+
+              <div class="input-container">
+                <span class="inside-input-info grey-text">
+                  <span class="input-img"
+                    ><img class="xs-avatar" src="../img/envelope.svg"
+                  /></span>
+                  <span class="input-line">|</span>
+                </span>
+                <input
+                  type="text"
+                  placeholder="Username *"
+                  class="error-input input-field login-input"
+                />
+              </div>
+
+              <div class="input-container">
+                <span class="inside-input-info grey-text">
+                  <span class="input-img"
+                    ><img class="xs-avatar" src="../img/userImg.svg"
+                  /></span>
+                  <span class="input-line">|</span>
+                </span>
+                <input
+                  type="text"
+                  placeholder="Email *"
+                  class="error-input input-field login-input"
+                />
+              </div>
+
+              <div class="input-container">
+                <span class="inside-input-info grey-text">
+                  <span class="input-img"
+                    ><img class="xs-avatar" src="../img/lock.svg"
+                  /></span>
+                  <span class="input-line">|</span>
+                </span>
+                <input
+                  type="text"
+                  placeholder="Password *"
+                  class="error-input input-field login-input"
+                />
+              </div>
+
+              <button class="primary-button button-large login-button">Sign up</button>
+              <p class="grey-text login-or-text">or</p>
+              <button class="button-light-primary button-large">Already a member? Login instead</button>
+            </div>
+          </div>
         </section>
 
         <section class="footer">
