@@ -53,3 +53,7 @@
   border-bottom: 1px solid var(--grey-color);
   margin: auto 1.3rem;
 }
+
+.login-right-container h2 {
+  color: var(--dark-color);
+}
