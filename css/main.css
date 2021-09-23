@@ -1,0 +1,245 @@
+@import "layout.css";
+@import "nav.css";
+@import "sideNav.css";
+@import "avatar.css";
+@import "alert.css";
+@import "button.css";
+@import "badge.css";
+@import "card.css";
+@import "modal.css";
+@import "toast.css";
+@import "list.css";
+@import "input.css";
+@import "grid.css";
+@import "img.css";
+@import "footer.css";
+@import "landing.css";
+@import "login.css";
+
+:root {
+  --primary-color: #05c887;
+  --secondary-color: #fe5f55;
+  --light-color: #e8edf1;
+  --dark-color: #2b2b2b;
+  --warning-color: #f6ae2d;
+  --grey-color: #7f7f7f;
+  --white-color: #ffffff;
+  --info-color: #3c91e6;
+  --primary-light-color: rgb(5 200 135 / 20%);
+  --secondary-light-color: rgb(254 95 85 / 20%);
+  --warning-light-color: rgb(246 174 45 / 20%);
+  --info-light-color: rgb(60 145 230 / 20%);
+  --secondary-hover-color: #ff6960;
+  --primary-hover-color: #06e59b;
+  --warning-hover-color: #fcbe50;
+  --info-hover-color: #66a3e1;
+  --font-dark-light-bg-color: #ffffff;
+}
+
+.light-theme {
+  --light-color: #e8edf1;
+  --dark-color: #2b2b2b;
+  --grey-color: #7f7f7f;
+  --white-color: #ffffff;
+}
+
+.dark-theme {
+  --light-color: #424242;
+  --dark-color: #e5e5e5;
+  --grey-color: #a5a5a5;
+  --white-color: #1c1d1f;
+}
+
+@font-face {
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-family: "Roboto-Bold";
+}
+
+@font-face {
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-family: "Roboto-Regular";
+}
+
+@font-face {
+  src: url(../fonts/Roboto-Medium.ttf);
+  font-family: "Roboto-Medium";
+}
+
+body {
+  margin: 0;
+  background: var(--white-color);
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.background-property {
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.background-property:hover {
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.main-content {
+  margin: auto;
+  width: 86%;
+  padding-bottom: 1.8rem;
+}
+.section-heading,
+.section-subheading {
+  color: var(--dark-color);
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.3;
+}
+
+h1,
+h2 {
+  font-family: "Roboto-Bold";
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3,
+h4 {
+  font-family: "Roboto-Medium";
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.9rem;
+  font-family: "Roboto-Regular";
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grey-text {
+  color: var(--grey-color);
+}
+
+.small-text {
+  font-size: 0.7rem;
+  font-family: "Roboto-Regular";
+}
+
+.section-container {
+  min-height: 70vh;
+}
+
+.section-heading {
+  margin: 0.6rem 0 0.6rem 0;
+}
+
+.section-subheading {
+  margin: 1.8rem 0;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-card {
+  border-radius: 0.3rem;
+  padding: 0.9rem;
+  border: 0.06rem solid var(--light-color);
+}
+
+.margin-right {
+  margin-right: 0.6rem;
+}
+
+.margin-bottom {
+  margin-bottom: 1.2rem;
+}
+
+.text-section {
+  color: var(--dark-color);
+}
+
+.background-primary {
+  background: var(--primary-color);
+}
+
+.background-secondary {
+  background: var(--secondary-color);
+}
+
+.background-warning {
+  background: var(--warning-color);
+}
+
+.background-info {
+  background: var(--info-color);
+}
+
+.background-primary-light {
+  background: var(--primary-light-color);
+}
+
+.background-secondary-light {
+  background: var(--secondary-light-color);
+}
+
+.background-warning-light {
+  background: var(--warning-light-color);
+}
+
+.background-info-light {
+  background: var(--info-light-color);
+}
+
+pre[class*="language-"] {
+  background: #1b1717 !important;
+}
+
+@media (max-width: 1199px) {
+  pre {
+    display: none;
+  }
+}
+@media (max-width: 990.06rem) {
+  .main-content {
+    width: 97%;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-card {
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width: 414px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}

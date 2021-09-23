@@ -1,0 +1,109 @@
+.nav {
+  color: var(--dark-color);
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  color: var(--dark-color);
+  text-decoration: none;
+  align-items: center;
+}
+.nav-background {
+  background: var(--light-color);
+  padding: 0.6rem;
+}
+
+.logo-img {
+  width: 6.5vh;
+}
+
+.logo-heading {
+  margin: 0 0 0 0.6rem;
+  font-family: "Roboto-Bold";
+  letter-spacing: 0.12rem;
+  font-size: 1.5rem;
+}
+
+.navbar-unordered-list {
+  display: flex;
+  list-style: none;
+  flex: 3;
+  justify-content: flex-end;
+  padding-left: 0;
+}
+
+.nav-list-item {
+  margin-right: 0.9rem;
+  width: 2.6vh;
+  height: 2.6vh;
+  cursor: pointer;
+}
+
+.github-image,
+.moon-image,
+.hamburger-image,
+.moon-image-active {
+  width: 100%;
+  height: 100%;
+  transition: background 0.3s ease-in;
+}
+
+.light-theme
+.background-github-image {
+  background: url(../img/github.svg);
+}
+
+.light-theme
+.background-moon-image {
+  background: url(../img/moon.svg);
+}
+
+.light-theme .hamburger-image {
+  background: url(../img/menu.svg);
+}
+
+.dark-theme .background-github-image {
+  background: url(../img/dark/github.svg);
+}
+
+.dark-theme .background-moon-image {
+  background: url(../img/dark/moon.svg);
+}
+
+.dark-theme .hamburger-image {
+  background: url(../img/dark/menu.svg);
+}
+
+.background-github-image:hover {
+  background: url(../img/github-active.svg);
+}
+
+.background-moon-image:hover,
+.background-moon-image-active {
+  background: url(../img/moon-active.svg);
+}
+
+.background-hamburger-image:hover {
+  background: url(../img/active-menu.svg);
+}
+
+.hamburger-list-item {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .hamburger-list-item {
+    display: block;
+  }
+}
+
+@media (max-width: 414px) {
+  .logo-img {
+    width: 5.2vh;
+  }
+  .logo-heading {
+    font-size: 1.2rem;
+    margin: 0 0 0 0.3rem;
+  }
+}

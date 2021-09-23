@@ -1,0 +1,325 @@
+button {
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-family: "Roboto-Medium";
+}
+
+.icon-button,
+.primary-button,
+.secondary-button,
+.warning-button,
+.info-button,
+.light-button,
+.button-light-primary,
+.button-light-secondary,
+.button-light-warning,
+.button-light-info,
+.button-link-primary,
+.button-link-secondary,
+.button-link-warning,
+.button-link-info,
+.button-link-light,
+.floating-button {
+  background-color: unset;
+  border: none;
+}
+
+.icon-button:focus,
+.primary-button:focus,
+.secondary-button:focus,
+.warning-button:focus,
+.info-button:focus,
+.light-button:focus,
+.button-light-primary:focus,
+.button-light-secondary:focus,
+.button-light-warning:focus,
+.button-light-info:focus,
+.button-link-primary:focus,
+.button-link-secondary:focus,
+.button-link-warning:focus,
+.button-link-info:focus,
+.button-link-light:focus,
+.button-outline-primary:focus,
+.button-outline-secondary:focus,
+.button-outline-warning:focus,
+.button-outline-info:focus,
+.button-outline-light:focus,
+.floating-button:focus {
+  outline: var(--primary-color);
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.warning-button:hover,
+.info-button:hover,
+.light-button:hover,
+.button-link-primary:hover,
+.button-link-secondary:hover,
+.button-link-warning:hover,
+.button-link-info:hover,
+.button-link-light:hover,
+.button-outline-primary:hover,
+.button-outline-secondary:hover,
+.button-outline-warning:hover,
+.button-outline-info:hover,
+.button-outline-light:hover {
+  transition: 0.2s ease-in;
+}
+
+.primary-button,
+.secondary-button,
+.warning-button,
+.info-button {
+  color: var(--font-dark-light-bg-color);
+}
+
+.primary-button {
+  background: var(--primary-color);
+}
+
+.secondary-button {
+  background: var(--secondary-color);
+}
+
+.warning-button {
+  background: var(--warning-color);
+}
+
+.info-button {
+  background: var(--info-color);
+}
+
+.light-button,
+.button-outline-light:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+  border: 0.06rem solid transparent;
+}
+
+.primary-button:hover {
+  background: var(--primary-hover-color);
+}
+
+.secondary-button:hover {
+  background: var(--secondary-hover-color);
+}
+
+.warning-button:hover {
+  background: var(--warning-hover-color);
+}
+
+.info-button:hover {
+  background: var(--info-hover-color);
+}
+
+.light-button:hover {
+  border: 0.06rem solid var(--light-color);
+  background: var(--white-color);
+}
+
+.button-light-primary,
+.button-outline-primary:hover {
+  background: var(--primary-light-color);
+}
+
+.button-light-secondary,
+.button-outline-secondary:hover {
+  background: var(--secondary-light-color);
+}
+
+.button-light-warning,
+.button-outline-warning:hover {
+  background: var(--warning-light-color);
+}
+
+.button-light-info,
+.button-outline-info:hover {
+  background: var(--info-light-color);
+}
+
+.button-light-primary,
+.button-outline-primary,
+.button-link-primary {
+  color: var(--primary-color);
+}
+.button-light-secondary,
+.button-outline-secondary,
+.button-link-secondary {
+  color: var(--secondary-color);
+}
+.button-light-warning,
+.button-outline-warning,
+.button-link-warning {
+  color: var(--warning-color);
+}
+.button-light-info,
+.button-outline-info,
+.button-link-info {
+  color: var(--info-color);
+}
+.button-light,
+.button-outline-light,
+.button-link-light {
+  color: var(--dark-color);
+}
+
+.button-outline-primary,
+.button-outline-secondary,
+.button-outline-warning,
+.button-outline-info,
+.button-outline-light,
+.button-light-primary:hover,
+.button-light-secondary:hover,
+.button-light-warning:hover,
+.button-light-info:hover {
+  background: var(--white-color);
+}
+
+.button-outline-primary,
+.button-light-primary:hover {
+  border: 0.06rem solid var(--primary-color);
+}
+
+.button-outline-secondary,
+.button-light-secondary:hover {
+  border: 0.06rem solid var(--secondary-color);
+}
+
+.button-outline-warning,
+.button-light-warning:hover {
+  border: 0.06rem solid var(--warning-color);
+}
+
+.button-outline-info,
+.button-light-info:hover {
+  border: 0.06rem solid var(--info-color);
+}
+
+.button-outline-light {
+  border: 0.06rem solid var(--light-color);
+}
+
+.button-link-primary:hover,
+.button-link-secondary:hover,
+.button-link-warning:hover,
+.button-link-info:hover,
+.button-link-light:hover {
+  text-decoration: underline;
+}
+
+.button-outline-primary:hover,
+.button-outline-secondary:hover,
+.button-outline-warning:hover,
+.button-outline-info:hover,
+.button-outline-light:hover,
+.button-light-primary,
+.button-light-secondary,
+.button-light-warning,
+.button-light-info {
+  border: 0.06rem solid transparent;
+}
+
+.button-xtra-small {
+  padding: 0.1rem 0.6rem;
+  font-size: 0.7em;
+}
+
+.button-small {
+  padding: 0.3rem 1.2rem;
+  font-size: 0.9em;
+}
+
+.button-medium {
+  padding: 0.6rem 1.8rem;
+  font-size: 1em;
+}
+
+.button-large {
+  padding: 0.7rem 2.5rem;
+  font-size: 1.1em;
+}
+
+.button-xtra-large {
+  padding: 1.2rem 4.3rem;
+  font-size: 1.2em;
+}
+
+.icon-button {
+  position: relative;
+}
+
+.cart-img,
+.notification-img {
+  transition: background 0.2s ease-in;
+}
+
+.light-theme .cart-img {
+  background: url("../img/badge/shopping-cart.svg");
+}
+
+
+
+.light-theme .notification-img {
+  background: url("../img/badge/bell.svg");
+}
+
+.dark-theme .cart-img {
+  background: url("../img/badge/dark/shopping-cart.svg");
+}
+
+
+
+.dark-theme .notification-img {
+  background: url("../img/badge/dark/bell.svg");
+}
+
+
+.notification-img:hover {
+  background: url("../img/badge/active-bell.svg");
+}
+
+.cart-img:hover {
+  background: url("../img/badge/active-shopping-cart.svg");
+}
+
+.left-text-icon-button,
+.right-text-icon-button {
+  display: flex;
+  align-items: center;
+}
+
+.right-text-icon-button-img {
+  width: 1.9vh;
+  height: 1.9vh;
+  margin-left: 0.4rem;
+}
+.left-text-icon-button-img {
+  margin-right: 0.4rem;
+}
+
+.floating-button{
+  color:var(--font-dark-light-bg-color);
+  background: var(--primary-color);
+  border-radius: 50%;
+  width:6.5vh;
+  height: 6.5vh;
+  font-size: 2rem;
+  position: fixed;
+  right:1.2rem;
+  bottom: 1.2rem;
+}
+
+
+@media (max-width:576px){
+  button{
+    margin: 0.3rem 0;
+  }
+}
+
+@media (max-width:360px){
+  .button-medium{
+    padding: 0.4rem 0.9rem;
+  }
+}
+
+

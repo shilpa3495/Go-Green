@@ -1,0 +1,2992 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GOGreen</title>
+    <link rel="icon" href="../img/green-leaf-logo.svg" width="16px" />
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <link rel="stylesheet" href="../css/prism.css" />
+  </head>
+
+  <body class="light-theme" id="change-theme">
+    <div class="layout">
+      <nav class="nav fixed-navbar">
+        <a href="../index.html" class="flex logo-container">
+          <img
+            src="../img/green-leaf-logo.svg"
+            class="logo-img"
+            alt="no-image"
+          />
+          <h1 class="logo-heading">GOGreen</h1>
+        </a>
+        <ul class="navbar-unordered-list">
+          <li class="nav-list-item">
+            <a href="https://github.com/shilpa3495/Go-Green" target="_blank">
+              <div
+                class="github-image background-property background-github-image"
+              ></div
+            ></a>
+          </li>
+          <li class="nav-list-item" id="change-to-dark-mode">
+            <div
+              class="moon-image background-property background-moon-image"
+              id="change-image-on-toogle"
+            ></div>
+          </li>
+          <li id="show-sidebar" class="nav-list-item hamburger-list-item">
+            <div
+              class="hamburger-image background-property background-hamburger-image"
+            ></div>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="sidebar" class="sidebar-mobile-collapse">
+        <div class="sidebar-nav">
+          <div class="sidebar-header">
+            <h2 class="sidebar-heading">Components</h2>
+            <div
+              class="sidebar-header-close-img background-property"
+              id="hide-sidebar"
+            ></div>
+          </div>
+
+          <ul class="sidebar-nav-unordered-list">
+            <li id="avatar-list" class="sidebar-nav-item">Avatar</li>
+            <li id="alert-list" class="sidebar-nav-item">Alert</li>
+            <li id="badge-list" class="sidebar-nav-item">Badge</li>
+            <li id="button-list" class="sidebar-nav-item">Button</li>
+            <li id="card-list" class="sidebar-nav-item">Card</li>
+            <li id="image-list" class="sidebar-nav-item">Image</li>
+            <li id="input-list" class="sidebar-nav-item">Input</li>
+            <li id="lists-list" class="sidebar-nav-item">Lists</li>
+            <li id="navigation-list" class="sidebar-nav-item">Navigation</li>
+            <li id="modal-list" class="sidebar-nav-item">Modal</li>
+            <li id="rating-list" class="sidebar-nav-item">Rating</li>
+            <li id="slider-list" class="sidebar-nav-item">Slider</li>
+            <li id="grid-list" class="sidebar-nav-item">Simplified Grid</li>
+            <li id="text-utilities-list" class="sidebar-nav-item">
+              Text Utilities
+            </li>
+            <li id="toast-list" class="sidebar-nav-item">Toast</li>
+            <li id="login-list" class="sidebar-nav-item">
+              Login Page
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <section class="avatar-section section-container" id="avatar">
+          <h2 class="section-heading">Avatar</h2>
+
+          <h3 class="section-subheading">Usage</h3>
+          <div class="section-card">
+            <img
+              class="margin-right avatar-img sm-avatar"
+              src="https://randomuser.me/api/portraits/men/86.jpg"
+              alt="no-image"
+            />
+            <img
+              class="margin-right avatar-img sm-avatar"
+              src="https://randomuser.me/api/portraits/men/47.jpg"
+              alt="no-image"
+            />
+            <img
+              class="margin-right avatar-img sm-avatar"
+              src="https://randomuser.me/api/portraits/women/63.jpg"
+              alt="no-image"
+            />
+            <img
+              class="margin-right avatar-img sm-avatar"
+              src="https://randomuser.me/api/portraits/women/17.jpg"
+              alt="no-image"
+            />
+            <img
+              class="margin-right avatar-img sm-avatar"
+              src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3NjYzMzE1MV5BMl5BanBnXkFtZTgwNTA4NDY4OTE@._V1_UX172_CR0,0,172,256_AL_.jpg"
+              alt="no-image"
+            />
+            <img
+              class="margin-right avatar-img sm-avatar"
+              src="https://randomuser.me/api/portraits/men/42.jpg"
+              alt="no-image"
+            />
+            <img
+              class="margin-right avatar-img sm-avatar"
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="no-image"
+            />
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;img<br />
+                class=&quot;margin-right avatar-img sm-avatar&quot;<br />
+                src=&quot;https://randomuser.me/api/portraits/men/86.jpg&quot;<br />
+                alt=&quot;no-image&quot;<br />
+              /&gt;<br />
+              &lt;img<br />
+                class=&quot;margin-right avatar-img sm-avatar&quot;<br />
+                src=&quot;https://randomuser.me/api/portraits/men/47.jpg&quot;<br />
+                alt=&quot;no-image&quot;<br />
+              /&gt;<br />
+              &lt;img<br />
+                class=&quot;margin-right avatar-img sm-avatar&quot;<br />
+                src=&quot;https://randomuser.me/api/portraits/women/63.jpg&quot;<br />
+                alt=&quot;no-image&quot;<br />
+              /&gt;<br />
+              &lt;img<br />
+                class=&quot;margin-right avatar-img sm-avatar&quot;<br />
+                src=&quot;https://randomuser.me/api/portraits/women/17.jpg&quot;<br />
+                alt=&quot;no-image&quot;<br />
+              /&gt;<br />
+              &lt;img<br />
+                class=&quot;margin-right avatar-img sm-avatar&quot;<br />
+                src=&quot;https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3NjYzMzE1MV5BMl5BanBnXkFtZTgwNTA4NDY4OTE@._V1_UX172_CR0,0,172,256_AL_.jpg&quot;<br />
+                alt=&quot;no-image&quot;<br />
+              /&gt;<br />
+              &lt;img<br />
+                class=&quot;margin-right avatar-img sm-avatar&quot;<br />
+                src=&quot;https://randomuser.me/api/portraits/men/42.jpg&quot;<br />
+                alt=&quot;no-image&quot;<br />
+              /&gt;<br />
+              &lt;img<br />
+                class=&quot;margin-right avatar-img sm-avatar&quot;<br />
+                src=&quot;https://randomuser.me/api/portraits/men/32.jpg&quot;<br />
+                alt=&quot;no-image&quot;<br />
+              /&gt;
+           </code>
+          </pre>
+
+          <h3 class="section-subheading">Avatar sizes</h3>
+          <div class="section-card">
+            <img
+              class="margin-right avatar-img xs-avatar"
+              src="https://randomuser.me/api/portraits/men/86.jpg"
+              alt="no-image"
+            />
+            <img
+              class="margin-right avatar-img xsm-avatar"
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="no-image"
+            />
+            <img
+              class="margin-right avatar-img sm-avatar"
+              src="https://randomuser.me/api/portraits/men/47.jpg"
+              alt="no-image"
+            />
+            <img
+              class="margin-right avatar-img md-avatar"
+              src="https://randomuser.me/api/portraits/women/63.jpg"
+              alt="no-image"
+            />
+            <img
+              class="margin-right avatar-img lg-avatar"
+              src="https://randomuser.me/api/portraits/women/17.jpg"
+              alt="no-image"
+            />
+            <img
+              class="margin-right avatar-img xl-avatar"
+              src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3NjYzMzE1MV5BMl5BanBnXkFtZTgwNTA4NDY4OTE@._V1_UX172_CR0,0,172,256_AL_.jpg"
+              alt="no-image"
+            />
+          </div>
+
+          <pre>
+              <code class="language-markup">
+                  &lt;img<br />
+                  class=&quot;margin-right avatar-img xs-avatar&quot;<br />
+                  src=&quot;https://randomuser.me/api/portraits/men/86.jpg&quot;<br />
+                  alt=&quot;no-image&quot;<br />
+                /&gt;<br />
+                &lt;img<br />
+                  class=&quot;margin-right avatar-img xsm-avatar&quot;<br />
+                  src=&quot;https://randomuser.me/api/portraits/men/32.jpg&quot;<br />
+                  alt=&quot;no-image&quot;<br />
+                /&gt;<br />
+                &lt;img<br />
+                  class=&quot;margin-right avatar-img sm-avatar&quot;<br />
+                  src=&quot;https://randomuser.me/api/portraits/men/47.jpg&quot;<br />
+                  alt=&quot;no-image&quot;<br />
+                /&gt;<br />
+                &lt;img<br />
+                  class=&quot;margin-right avatar-img md-avatar&quot;<br />
+                  src=&quot;https://randomuser.me/api/portraits/women/63.jpg&quot;<br />
+                  alt=&quot;no-image&quot;<br />
+                /&gt;<br />
+                &lt;img<br />
+                  class=&quot;margin-right avatar-img lg-avatar&quot;<br />
+                  src=&quot;https://randomuser.me/api/portraits/women/17.jpg&quot;<br />
+                  alt=&quot;no-image&quot;<br />
+                /&gt;<br />
+                &lt;img<br />
+                  class=&quot;margin-right avatar-img xl-avatar&quot;<br />
+                  src=&quot;https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3NjYzMzE1MV5BMl5BanBnXkFtZTgwNTA4NDY4OTE@._V1_UX172_CR0,0,172,256_AL_.jpg&quot;<br />
+                  alt=&quot;no-image&quot;<br />
+                /&gt;
+              </code> 
+          </pre>
+
+          <h3 class="section-subheading">Default Avatar</h3>
+
+          <div class="section-card flex">
+            <div class="default-avatar-container margin-right sm-avatar">
+              <img
+                class="avatar-img sm-avatar"
+                src="../img/avatar/user.svg"
+                alt="no-image"
+              />
+            </div>
+          </div>
+
+          <pre>
+              <code class="language-markup">
+                  &lt;div class=&quot;default-avatar-container margin-right sm-avatar&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;avatar-img sm-avatar&quot;<br />
+                    src=&quot;../img/avatar/user.svg&quot;<br />
+                    alt=&quot;no-image&quot;<br />
+                  /&gt;<br />
+                &lt;/div&gt;
+              </code> 
+          </pre>
+
+          <h3 class="section-subheading">Avatar with badge</h3>
+
+          <div class="section-card flex">
+            <div class="default-avatar-container margin-right sm-avatar">
+              <img
+                class="avatar-img sm-avatar"
+                src="../img/avatar/user.svg"
+                alt="no-image"
+              />
+              <div class="online-badge"></div>
+            </div>
+
+            <div class="default-avatar-container margin-right sm-avatar">
+              <img
+                class="avatar-img sm-avatar"
+                src="../img/avatar/user.svg"
+                alt="no-image"
+              />
+              <div class="offline-badge"></div>
+            </div>
+          </div>
+
+          <pre>
+              <code class="language-markup">
+                  &lt;div class=&quot;default-avatar-container margin-right sm-avatar&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;avatar-img sm-avatar&quot;<br />
+                    src=&quot;../img/avatar/user.svg&quot;<br />
+                    alt=&quot;no-image&quot;<br />
+                  /&gt;<br />
+                  &lt;div class=&quot;online-badge&quot;&gt;&lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+                <br />
+                &lt;div class=&quot;default-avatar-container margin-right sm-avatar&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;avatar-img sm-avatar&quot;<br />
+                    src=&quot;../img/avatar/user.svg&quot;<br />
+                    alt=&quot;no-image&quot;<br />
+                  /&gt;<br />
+                  &lt;div class=&quot;offline-badge&quot;&gt;&lt;/div&gt;<br />
+                &lt;/div&gt;
+              </code> 
+          </pre>
+
+          <h3 class="section-subheading">Avatar Group</h3>
+
+          <div class="section-card flex">
+            <span class="group-avatar z-index-group-image-container-1">
+              <img
+                class="avatar-img sm-avatar  z-index-group-image"
+                src="https://randomuser.me/api/portraits/men/86.jpg"
+                alt="no-image"
+              />
+            </span>
+            <span class="group-avatar z-index-group-image-container-2">
+              <img
+                class="avatar-img sm-avatar  z-index-group-image"
+                src="https://randomuser.me/api/portraits/men/47.jpg"
+                alt="no-image"
+              />
+            </span>
+            <span class="group-avatar sm-avatar group-total-number">
+              +3
+            </span>
+          </div>
+
+          <pre>
+              <code class="language-markup">
+                  &lt;span class=&quot;group-avatar z-index-group-image-container-1&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;avatar-img sm-avatar  z-index-group-image&quot;<br />
+                    src=&quot;https://randomuser.me/api/portraits/men/86.jpg&quot;<br />
+                    alt=&quot;no-image&quot;<br />
+                  /&gt;<br />
+                &lt;/span&gt;<br />
+                &lt;span class=&quot;group-avatar z-index-group-image-container-2&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;avatar-img sm-avatar  z-index-group-image&quot;<br />
+                    src=&quot;https://randomuser.me/api/portraits/men/47.jpg&quot;<br />
+                    alt=&quot;no-image&quot;<br />
+                  /&gt;<br />
+                &lt;/span&gt;<br />
+                &lt;span class=&quot;group-avatar sm-avatar group-total-number&quot;&gt;<br />
+                  +3<br />
+                &lt;/span&gt;
+              </code> 
+          </pre>
+        </section>
+
+        <section
+          class="alert-section section-container"
+          id="alert"
+          style="display: none"
+        >
+          <h2 class="section-heading">Alert</h2>
+
+          <h3 class="section-subheading">Usage</h3>
+
+          <div class="section-card">
+            <div class="alert-card error-alert margin-bottom">
+              <div class="alert-body">
+                <img class="alert-img-icon" src="../img/alert/cancel.svg" />
+                <h4 class="alert-title">A simple Error alert—check it out!</h4>
+                <button class="icon-button alert-close-button">
+                  <div class="alert-close-img background-property"></div>
+                </button>
+              </div>
+            </div>
+
+            <div class="alert-card success-alert margin-bottom">
+              <div class="alert-body">
+                <img class="alert-img-icon" src="../img/alert/check.svg" />
+                <h4 class="alert-title">
+                  A simple Success alert—check it out!
+                </h4>
+                <button class="icon-button alert-close-button">
+                  <div class="alert-close-img background-property"></div>
+                </button>
+              </div>
+            </div>
+
+            <div class="alert-card warning-alert margin-bottom">
+              <div class="alert-body">
+                <img class="alert-img-icon" src="../img/alert/warning.svg" />
+                <h4 class="alert-title">
+                  A simple Warning alert—check it out!
+                </h4>
+                <button class="icon-button alert-close-button">
+                  <div class="alert-close-img background-property"></div>
+                </button>
+              </div>
+            </div>
+
+            <div class="alert-card info-alert margin-bottom">
+              <div class="alert-body">
+                <img
+                  class="alert-img-icon"
+                  src="../img/alert/info-button.svg"
+                />
+                <h4 class="alert-title">A simple Info alert—check it out!</h4>
+                <button class="icon-button alert-close-button">
+                  <div class="alert-close-img background-property"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;alert-card error-alert margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;alert-body&quot;&gt;<br />
+                  &lt;img class=&quot;alert-img-icon&quot; src=&quot;../img/alert/cancel.svg&quot; /&gt;<br />
+                  &lt;h4 class=&quot;alert-title&quot;&gt;A simple Error alert&mdash;check it out!&lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button alert-close-button&quot;&gt;<br />
+                    &lt;div class=&quot;alert-close-img background-property&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;alert-card success-alert margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;alert-body&quot;&gt;<br />
+                  &lt;img class=&quot;alert-img-icon&quot; src=&quot;../img/alert/check.svg&quot; /&gt;<br />
+                  &lt;h4 class=&quot;alert-title&quot;&gt;<br />
+                    A simple Success alert&mdash;check it out!<br />
+                  &lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button alert-close-button&quot;&gt;<br />
+                    &lt;div class=&quot;alert-close-img background-property&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;alert-card warning-alert margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;alert-body&quot;&gt;<br />
+                  &lt;img class=&quot;alert-img-icon&quot; src=&quot;../img/alert/warning.svg&quot; /&gt;<br />
+                  &lt;h4 class=&quot;alert-title&quot;&gt;<br />
+                    A simple Warning alert&mdash;check it out!<br />
+                  &lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button alert-close-button&quot;&gt;<br />
+                    &lt;div class=&quot;alert-close-img background-property&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;alert-card info-alert margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;alert-body&quot;&gt;<br />
+                  &lt;img class=&quot;alert-img-icon&quot; src=&quot;../img/alert/info-button.svg&quot; /&gt;<br />
+                  &lt;h4 class=&quot;alert-title&quot;&gt;A simple Info alert&mdash;check it out!&lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button alert-close-button&quot;&gt;<br />
+                    &lt;div class=&quot;alert-close-img background-property&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Styles</h3>
+
+          <div class="section-card">
+            <div class="alert-card success-alert margin-bottom">
+              <div class="alert-body">
+                <img class="alert-img-icon" src="../img/alert/check.svg" />
+                <h4 class="alert-title">
+                  A simple Success alert—check it out!
+                </h4>
+                <button class="icon-button alert-close-button">
+                  <div class="alert-close-img background-property"></div>
+                </button>
+              </div>
+            </div>
+
+            <div class="alert-card success-alert-dark-background margin-bottom">
+              <div class="alert-body">
+                <img
+                  class="alert-img-icon"
+                  src="../img/alert/white-check.svg"
+                />
+                <h4 class="alert-title">
+                  A simple Success alert—check it out!
+                </h4>
+                <button class="icon-button alert-close-button">
+                  <img
+                    class="alert-white-close-img"
+                    src="../img/alert/white-cross.svg"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="alert-card success-alert-light-background margin-bottom"
+            >
+              <div class="alert-body">
+                <img class="alert-img-icon" src="../img/alert/check.svg" />
+                <h4 class="alert-title">
+                  A simple Success alert—check it out!
+                </h4>
+                <button class="icon-button alert-close-button">
+                  <div class="alert-close-img background-property"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;alert-card success-alert margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;alert-body&quot;&gt;<br />
+                  &lt;img class=&quot;alert-img-icon&quot; src=&quot;../img/alert/check.svg&quot; /&gt;<br />
+                  &lt;h4 class=&quot;alert-title&quot;&gt;<br />
+                    A simple Success alert&mdash;check it out!<br />
+                  &lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button alert-close-button&quot;&gt;<br />
+                    &lt;div class=&quot;alert-close-img background-property&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;alert-card success-alert-dark-background margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;alert-body&quot;&gt;<br />
+                  &lt;img class=&quot;alert-img-icon&quot; src=&quot;../img/alert/white-check.svg&quot; /&gt;<br />
+                  &lt;h4 class=&quot;alert-title&quot;&gt;<br />
+                    A simple Success alert&mdash;check it out!<br />
+                  &lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button alert-close-button&quot;&gt;<br />
+                    &lt;img<br />
+                      class=&quot;alert-white-close-img&quot;<br />
+                      src=&quot;../img/alert/white-cross.svg&quot;<br />
+                    /&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;alert-card success-alert-light-background margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;alert-body&quot;&gt;<br />
+                  &lt;img class=&quot;alert-img-icon&quot; src=&quot;../img/alert/check.svg&quot; /&gt;<br />
+                  &lt;h4 class=&quot;alert-title&quot;&gt;<br />
+                    A simple Success alert&mdash;check it out!<br />
+                  &lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button alert-close-button&quot;&gt;<br />
+                    &lt;div class=&quot;alert-close-img background-property&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Vertical Alert Modal</h3>
+
+          <div class="section-card">
+            <button
+              class="secondary-button button-medium"
+              id="active-alert-modal"
+            >
+              Discard Changes
+            </button>
+
+            <div
+              class="modal-container"
+              style="display: none"
+              id="alert-modal-container"
+            >
+              <div class="modal-card margin-bottom">
+                <div class="modal-header">
+                  <h4 class="modal-title">Discard Changes</h4>
+                </div>
+                <div class="modal-card-body">
+                  <p class="modal-description">
+                    Are you sure you want to discard all of your notes? 44 words
+                    will be deleted.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="light-button button-small margin-right"
+                    id="unactive-alert-modal"
+                  >
+                    NO
+                  </button>
+                  <button class="secondary-button button-small">Yes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+              <code class="language-markup">
+                  &lt;button<br />
+                  class=&quot;secondary-button button-medium&quot;<br />
+                  id=&quot;active-alert-modal&quot;<br />
+                &gt;<br />
+                  Discard Changes<br />
+                &lt;/button&gt;<br />
+                <br />
+                &lt;div<br />
+                  class=&quot;modal-container&quot;<br />
+                  style=&quot;display: none&quot;<br />
+                  id=&quot;alert-modal-container&quot;<br />
+                &gt;<br />
+                  &lt;div class=&quot;modal-card margin-bottom&quot;&gt;<br />
+                    &lt;div class=&quot;modal-header&quot;&gt;<br />
+                      &lt;h4 class=&quot;modal-title&quot;&gt;Discard Changes&lt;/h4&gt;<br />
+                    &lt;/div&gt;<br />
+                    &lt;div class=&quot;modal-card-body&quot;&gt;<br />
+                      &lt;p class=&quot;modal-description&quot;&gt;<br />
+                        Are you sure you want to discard all of your notes? 44 words<br />
+                        will be deleted.<br />
+                      &lt;/p&gt;<br />
+                    &lt;/div&gt;<br />
+                    &lt;div class=&quot;modal-footer&quot;&gt;<br />
+                      &lt;button<br />
+                        class=&quot;light-button button-small margin-right&quot;<br />
+                        id=&quot;unactive-alert-modal&quot;<br />
+                      &gt;<br />
+                        NO<br />
+                      &lt;/button&gt;<br />
+                      &lt;button class=&quot;secondary-button button-small&quot;&gt;Yes&lt;/button&gt;<br />
+                    &lt;/div&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;
+              </code>
+          </pre>
+        </section>
+
+        <section
+          class="badge-section section-container"
+          id="badge"
+          style="display: none"
+        >
+          <h2 class="section-heading">Badge</h2>
+
+          <h3 class="section-subheading">Usage</h3>
+
+          <div class="section-card">
+            <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-secondary">Secondary</span>
+            <span class="badge badge-warning">Warning</span>
+            <span class="badge badge-info">Info</span>
+            <span class="badge badge-light">Light</span>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+              &lt;span class=&quot;badge badge-primary&quot;&gt;Primary&lt;/span&gt;<br />
+              &lt;span class=&quot;badge badge-secondary&quot;&gt;Secondary&lt;/span&gt;<br />
+              &lt;span class=&quot;badge badge-warning&quot;&gt;Warning&lt;/span&gt;<br />
+              &lt;span class=&quot;badge badge-info&quot;&gt;Info&lt;/span&gt;<br />
+              &lt;span class=&quot;badge badge-light&quot;&gt;Light&lt;/span&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Styles</h3>
+          <div class="section-card">
+            <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-outline-primary">Primary</span>
+            <span class="badge badge-white-primary">Primary</span>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;span class=&quot;badge badge-primary&quot;&gt;Primary&lt;/span&gt;<br />
+                &lt;span class=&quot;badge badge-outline-primary&quot;&gt;Primary&lt;/span&gt;<br />
+                &lt;span class=&quot;badge badge-white-primary&quot;&gt;Primary&lt;/span&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Badge on icons</h3>
+          <div class="section-card flex">
+            <button class="icon-button margin-right">
+              <div class="cart-img background-property xsm-avatar"></div>
+              <span class="icon-badge-number badge-white-secondary">12</span>
+            </button>
+
+            <button class="icon-button">
+              <div
+                class="stacked-list-img background-property xsm-avatar"
+              ></div>
+              <span class="icon-badge-number badge-white-secondary">20</span>
+            </button>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;button class=&quot;icon-button margin-right&quot;&gt;<br />
+                &lt;div class=&quot;cart-img background-property xsm-avatar&quot;&gt;&lt;/div&gt;<br />
+                &lt;span class=&quot;icon-badge-number badge-white-secondary&quot;&gt;12&lt;/span&gt;<br />
+              &lt;/button&gt;<br />
+              <br />
+              &lt;button class=&quot;icon-button&quot;&gt;<br />
+                &lt;div<br />
+                  class=&quot;stacked-list-img background-property xsm-avatar&quot;<br />
+                &gt;&lt;/div&gt;<br />
+                &lt;span class=&quot;icon-badge-number badge-white-secondary&quot;&gt;20&lt;/span&gt;<br />
+              &lt;/button&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section
+          class="button-section section-container"
+          id="button"
+          style="display: none"
+        >
+          <h2 class="section-heading">Button</h2>
+
+          <h3 class="section-subheading">Usage</h3>
+
+          <div class="section-card">
+            <button class="primary-button button-medium">Primary</button>
+            <button class="secondary-button button-medium">Secondary</button>
+            <button class="warning-button button-medium">Warning</button>
+            <button class="info-button button-medium">Info</button>
+            <button class="light-button button-medium">Light</button>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+              &lt;button class=&quot;primary-button button-medium&quot;&gt;Primary&lt;/button&gt;<br />
+              &lt;button class=&quot;secondary-button button-medium&quot;&gt;Secondary&lt;/button&gt;<br />
+              &lt;button class=&quot;warning-button button-medium&quot;&gt;Warning&lt;/button&gt;<br />
+              &lt;button class=&quot;info-button button-medium&quot;&gt;Info&lt;/button&gt;<br />
+              &lt;button class=&quot;light-button button-medium&quot;&gt;Light&lt;/button&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Size</h3>
+
+          <div class="section-card">
+            <button class="primary-button button-xtra-small">Primary</button>
+            <button class="primary-button button-small">Primary</button>
+            <button class="primary-button button-medium">Primary</button>
+            <button class="primary-button button-large">Primary</button>
+            <button class="primary-button button-xtra-large">Primary</button>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+              &lt;button class=&quot;primary-button button-xtra-small&quot;&gt;Primary&lt;/button&gt;<br />
+              &lt;button class=&quot;primary-button button-small&quot;&gt;Primary&lt;/button&gt;<br />
+              &lt;button class=&quot;primary-button button-medium&quot;&gt;Primary&lt;/button&gt;<br />
+              &lt;button class=&quot;primary-button button-large&quot;&gt;Primary&lt;/button&gt;<br />
+              &lt;button class=&quot;primary-button button-xtra-large&quot;&gt;Primary&lt;/button&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Styles</h3>
+          <div class="section-card">
+            <button class="primary-button button-medium">Primary</button>
+            <button class="button-outline-primary button-medium">
+              Primary
+            </button>
+            <button class="button-light-primary button-medium">Primary</button>
+            <button class="button-link-primary button-medium">Primary</button>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+              &lt;button class=&quot;primary-button button-medium&quot;&gt;Primary&lt;/button&gt;<br />
+              &lt;button class=&quot;button-outline-primary button-medium&quot;&gt;<br />
+                Primary<br />
+              &lt;/button&gt;<br />
+              &lt;button class=&quot;button-light-primary button-medium&quot;&gt;Primary&lt;/button&gt;<br />
+              &lt;button class=&quot;button-link-primary button-medium&quot;&gt;Primary&lt;/button&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Button icons</h3>
+
+          <div class="section-card flex">
+            <button class="icon-button margin-right">
+              <div class="cart-img background-property xsm-avatar"></div>
+            </button>
+
+            <button class="icon-button">
+              <div
+                class="stacked-list-img background-property xsm-avatar"
+              ></div>
+            </button>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+              &lt;button class=&quot;icon-button margin-right&quot;&gt;<br />
+              &lt;div class=&quot;cart-img background-property xsm-avatar&quot;&gt;&lt;/div&gt;<br />
+              &lt;/button&gt;<br />
+              <br />
+              &lt;button class=&quot;icon-button&quot;&gt;<br />
+              &lt;div<br />
+                class=&quot;stacked-list-img background-property xsm-avatar&quot;<br />
+              &gt;&lt;/div&gt;<br />
+              &lt;/button&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Text Icon button</h3>
+          <div class="section-card flex">
+            <button
+              class="left-text-icon-button primary-button button-medium margin-right"
+            >
+              <img
+                class="xs-avatar left-text-icon-button-img"
+                src="../img/button/envelope.svg"
+                alt="no-image"
+              />Mail
+            </button>
+            <button
+              class="right-text-icon-button button-outline-primary button-medium"
+            >
+              Call<img
+                class="right-text-icon-button-img"
+                src="../img/button/call.svg"
+                alt="no-image"
+              />
+            </button>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;button<br />
+                class=&quot;left-text-icon-button primary-button button-medium margin-right&quot;<br />
+              &gt;<br />
+                &lt;img<br />
+                  class=&quot;xs-avatar left-text-icon-button-img&quot;<br />
+                  src=&quot;../img/button/envelope.svg&quot;<br />
+                  alt=&quot;no-image&quot;<br />
+                /&gt;Mail<br />
+              &lt;/button&gt;<br />
+              &lt;button<br />
+                class=&quot;right-text-icon-button button-outline-primary button-medium&quot;<br />
+              &gt;<br />
+                Call&lt;img<br />
+                  class=&quot;right-text-icon-button-img&quot;<br />
+                  src=&quot;../img/button/call.svg&quot;<br />
+                  alt=&quot;no-image&quot;<br />
+                /&gt;<br />
+              &lt;/button&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Floating button</h3>
+          <button class="floating-button">+</button>
+
+          <pre>
+            <code class="language-markup">
+                &lt;button class=&quot;floating-button&quot;&gt;+&lt;/button&gt;<br />
+            </code>
+          </pre>
+        </section>
+
+        <section class="section-container" id="card" style="display: none">
+          <h2 class="section-heading">Card</h2>
+
+          <h3 class="section-subheading">Vertical Card</h3>
+
+          <div class="section-card flex vertical-section-card">
+            <div class="vertical-product-card">
+              <div
+                class="background-property vertical-product-image"
+                style="background: linear-gradient(rgba(73, 75, 77, 0.1), rgba(73, 75, 77,0.1)), url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGNvbXBvc3R8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60');"
+              >
+                <span class="badge badge-white-secondary vertical-card-badge"
+                  >BestSeller</span
+                >
+              </div>
+              <div class="vertical-product-content-container">
+                <div class="rating-container">
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <span class="vertical-total-reviews">92</span>
+                </div>
+                <a class="vertical-product-heading" href="#">
+                  <span
+                    >TrustBasket Organic Vermicompost Fertilizer - 5 KG</span
+                  >
+                </a>
+                <div class="vertical-price-container">
+                  <span class="vertical-price-text"
+                    ><img
+                      class="vertical-currency-img"
+                      src="../img/india-rupee-currency-symbol.svg"
+                      alt="no-image"
+                    />349</span
+                  >
+                  <span class="grey-text vertical-actual-price"
+                    ><img
+                      class="grey-vertical-currency-img"
+                      src="../img/grey-india-rupee-currency-symbol.svg"
+                    />899</span
+                  >
+                  <span class="vertical-discount-text">(63% off)</span>
+                </div>
+                <div class="grey-text vertical-product-description">
+                  FREE Delivery on your first order in this category
+                </div>
+              </div>
+            </div>
+
+            <div class="vertical-product-card">
+              <div
+                class="background-property vertical-product-image"
+                style="background:linear-gradient(rgba(73, 75, 77, 0.1), rgba(73, 75, 77, 0.1)),     
+              url('https://images-na.ssl-images-amazon.com/images/I/61QuYX6mp5L._SL1280_.jpg');"
+              ></div>
+              <div class="vertical-product-content-container">
+                <div class="rating-container">
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <span class="vertical-total-reviews">102</span>
+                </div>
+                <a class="vertical-product-heading" href="#">
+                  <span
+                    >Kraft Seeds Garden Tools Set Trowel (Multicolour, 5
+                    Pieces)</span
+                  >
+                </a>
+                <div class="vertical-price-container">
+                  <span class="vertical-price-text"
+                    ><img
+                      class="vertical-currency-img"
+                      src="../img/india-rupee-currency-symbol.svg"
+                      alt="no-image"
+                    />299</span
+                  >
+                </div>
+                <div class="grey-text vertical-product-description">
+                  FREE Delivery on your first order in this category
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;vertical-product-card&quot;&gt;<br />
+                &lt;div<br />
+                  class=&quot;background-property vertical-product-image&quot;<br />
+                  style=&quot;background: linear-gradient(rgba(73, 75, 77, 0.1), rgba(73, 75, 77,0.1)), url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGNvbXBvc3R8ZW58MHx8MHw%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60');&quot;<br />
+                &gt;<br />
+                  &lt;span class=&quot;badge badge-white-secondary vertical-card-badge&quot;<br />
+                    &gt;BestSeller&lt;/span<br />
+                  &gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div class=&quot;vertical-product-content-container&quot;&gt;<br />
+                  &lt;div class=&quot;rating-container&quot;&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;span class=&quot;vertical-total-reviews&quot;&gt;92&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;a class=&quot;vertical-product-heading&quot; href=&quot;#&quot;&gt;<br />
+                    &lt;span<br />
+                      &gt;TrustBasket Organic Vermicompost Fertilizer - 5 KG&lt;/span<br />
+                    &gt;<br />
+                  &lt;/a&gt;<br />
+                  &lt;div class=&quot;vertical-price-container&quot;&gt;<br />
+                    &lt;span class=&quot;vertical-price-text&quot;<br />
+                      &gt;&lt;img<br />
+                        class=&quot;vertical-currency-img&quot;<br />
+                        src=&quot;../img/india-rupee-currency-symbol.svg&quot;<br />
+                        alt=&quot;no-image&quot;<br />
+                      /&gt;349&lt;/span<br />
+                    &gt;<br />
+                    &lt;span class=&quot;grey-text vertical-actual-price&quot;<br />
+                      &gt;&lt;img<br />
+                        class=&quot;grey-vertical-currency-img&quot;<br />
+                        src=&quot;../img/grey-india-rupee-currency-symbol.svg&quot;<br />
+                      /&gt;899&lt;/span<br />
+                    &gt;<br />
+                    &lt;span class=&quot;vertical-discount-text&quot;&gt;(63% off)&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div class=&quot;grey-text vertical-product-description&quot;&gt;<br />
+                    FREE Delivery on your first order in this category<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;vertical-product-card&quot;&gt;<br />
+                &lt;div<br />
+                  class=&quot;background-property vertical-product-image&quot;<br />
+                  style=&quot;background:linear-gradient(rgba(73, 75, 77, 0.1), rgba(73, 75, 77, 0.1)),     <br />
+                url('https://images-na.ssl-images-amazon.com/images/I/61QuYX6mp5L._SL1280_.jpg');&quot;<br />
+                &gt;&lt;/div&gt;<br />
+                &lt;div class=&quot;vertical-product-content-container&quot;&gt;<br />
+                  &lt;div class=&quot;rating-container&quot;&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;span class=&quot;vertical-total-reviews&quot;&gt;102&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;a class=&quot;vertical-product-heading&quot; href=&quot;#&quot;&gt;<br />
+                    &lt;span<br />
+                      &gt;Kraft Seeds Garden Tools Set Trowel (Multicolour, 5<br />
+                      Pieces)&lt;/span<br />
+                    &gt;<br />
+                  &lt;/a&gt;<br />
+                  &lt;div class=&quot;vertical-price-container&quot;&gt;<br />
+                    &lt;span class=&quot;vertical-price-text&quot;<br />
+                      &gt;&lt;img<br />
+                        class=&quot;vertical-currency-img&quot;<br />
+                        src=&quot;../img/india-rupee-currency-symbol.svg&quot;<br />
+                        alt=&quot;no-image&quot;<br />
+                      /&gt;299&lt;/span<br />
+                    &gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div class=&quot;grey-text vertical-product-description&quot;&gt;<br />
+                    FREE Delivery on your first order in this category<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Cards with text overlay</h3>
+
+          <div class="section-card overlay-card-section">
+            <div class="overlay-scroll-container">
+              <div
+                class="overlay-card background-property margin-right"
+                style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnZXRhYmxlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')"
+              >
+                <div class="overlay-heading">Fresh Vegetables Seeds</div>
+              </div>
+
+              <div
+                class="overlay-card background-property margin-right"
+                style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1584747420644-5c767eebcbe6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8Y29tcG9zdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')"
+              >
+                <div class="overlay-heading">Compost</div>
+              </div>
+
+              <div
+                class="overlay-card background-property"
+                style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGNvbXBvc3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')"
+              >
+                <div class="overlay-heading">Tools</div>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;overlay-scroll-container&quot;&gt;<br />
+                &lt;div<br />
+                  class=&quot;overlay-card background-property margin-right&quot;<br />
+                  style=&quot;background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnZXRhYmxlc3xlbnwwfHwwfA%3D%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60')&quot;<br />
+                &gt;<br />
+                  &lt;div class=&quot;overlay-heading&quot;&gt;Fresh Vegetables Seeds&lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+                <br />
+                &lt;div<br />
+                  class=&quot;overlay-card background-property margin-right&quot;<br />
+                  style=&quot;background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1584747420644-5c767eebcbe6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8Y29tcG9zdHxlbnwwfHwwfA%3D%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60')&quot;<br />
+                &gt;<br />
+                  &lt;div class=&quot;overlay-heading&quot;&gt;Compost&lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+                <br />
+                &lt;div<br />
+                  class=&quot;overlay-card background-property&quot;<br />
+                  style=&quot;background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGNvbXBvc3R8ZW58MHx8MHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60')&quot;<br />
+                &gt;<br />
+                  &lt;div class=&quot;overlay-heading&quot;&gt;Tools&lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Cards with text</h3>
+          <div class="section-card flex section-text-card">
+            <div class="text-card">
+              <div class="text-card-heading">Growing food is hard work</div>
+              <div class="text-card-description">
+                A lot of young kids assume food comes from air-conditioned
+                malls! When children themselves plant seeds in a pot or a
+                garden, see them grow up as plants or vines and witness the
+                flowers maturing into vegetables and fruits, they realise what
+                it really takes.
+              </div>
+            </div>
+
+            <div class="text-card">
+              <div class="text-card-heading">
+                Patience is necessary for success
+              </div>
+              <div class="text-card-description">
+                Low attention spans and the need for immediate gratification are
+                some of the behaviours demonstrated by many kids. Food takes
+                time to grow. Setting up a good garden with care and patience is
+                a good analogy for kids to experience the feeling of achievement
+                that comes with working towards the end goal with constant
+                optimism. Nature can instil patience in a kid.
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;text-card&quot;&gt;<br />
+                &lt;div class=&quot;text-card-heading&quot;&gt;Growing food is hard work&lt;/div&gt;<br />
+                &lt;div class=&quot;text-card-description&quot;&gt;<br />
+                  A lot of young kids assume food comes from air-conditioned<br />
+                  malls! When children themselves plant seeds in a pot or a<br />
+                  garden, see them grow up as plants or vines and witness the<br />
+                  flowers maturing into vegetables and fruits, they realise what<br />
+                  it really takes.<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;text-card&quot;&gt;<br />
+                &lt;div class=&quot;text-card-heading&quot;&gt;<br />
+                  Patience is necessary for success<br />
+                &lt;/div&gt;<br />
+                &lt;div class=&quot;text-card-description&quot;&gt;<br />
+                  Low attention spans and the need for immediate gratification are<br />
+                  some of the behaviours demonstrated by many kids. Food takes<br />
+                  time to grow. Setting up a good garden with care and patience is<br />
+                  a good analogy for kids to experience the feeling of achievement<br />
+                  that comes with working towards the end goal with constant<br />
+                  optimism. Nature can instil patience in a kid.<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Horizontal Card</h3>
+
+          <div class="section-card">
+            <div class="horizontal-product-card margin-bottom">
+              <div
+                class="background-property horizontal-product-image"
+                style="background: linear-gradient(rgba(73, 75, 77, 0.1), rgba(73, 75, 77, 0.1)), url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGNvbXBvc3R8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60')"
+              ></div>
+              <div class="horizontal-product-content-container">
+                <div class="rating-container">
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <span class="horizontal-total-reviews">92</span>
+                  <span
+                    class="badge badge-white-secondary horizontal-card-badge"
+                    >BestSeller</span
+                  >
+                </div>
+                <a class="horizontal-product-heading" href="#">
+                  <span
+                    >TrustBasket Organic Vermicompost Fertilizer - 5 KG</span
+                  >
+                </a>
+
+                <div class="horizontal-price-container">
+                  <span class="horizontal-price-text"
+                    ><img
+                      class="horizontal-currency-img"
+                      src="../img/india-rupee-currency-symbol.svg"
+                      alt="no-image"
+                    />349</span
+                  >
+                  <span class="grey-text horizontal-actual-price"
+                    ><img
+                      class="grey-horizontal-currency-img"
+                      src="../img/grey-india-rupee-currency-symbol.svg"
+                    />899</span
+                  >
+                  <span class="horizontal-discount-text">(63% off)</span>
+                </div>
+
+                <div class="grey-text horizontal-product-description">
+                  FREE Delivery on your first order in this category
+                </div>
+
+                <div class="horizontal-button-container flex">
+                  <button
+                    class="left-text-icon-button primary-button button-medium margin-right"
+                  >
+                    <img
+                      class="xs-avatar left-text-icon-button-img"
+                      src="../img/button/white-shopping-cart.svg"
+                      alt="no-image"
+                    />Add to cart
+                  </button>
+                  <button
+                    class="left-text-icon-button button-outline-light button-medium"
+                  >
+                    <div
+                      class="xs-avatar left-text-icon-button-img horizontal-card-like-img background-property"
+                    ></div>
+                    Wishlist
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="horizontal-product-card">
+              <div
+                class="background-property horizontal-product-image"
+                style="background: linear-gradient(rgba(73, 75, 77, 0.1), rgba(73, 75, 77,0.1)), url('https://m.media-amazon.com/images/I/91SkQIkawBL._AC_UL640_QL65_.jpg');"
+              ></div>
+              <div class="horizontal-product-content-container">
+                <div class="rating-container">
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <span class="horizontal-total-reviews">92</span>
+                </div>
+                <a class="horizontal-product-heading" href="#">
+                  <span
+                    >35 Varieties of Seeds with Instruction Manual - 1600+
+                    Seeds</span
+                  >
+                </a>
+
+                <div class="horizontal-price-container">
+                  <span class="horizontal-price-text"
+                    ><img
+                      class="horizontal-currency-img"
+                      src="../img/india-rupee-currency-symbol.svg"
+                      alt="no-image"
+                    />339</span
+                  >
+                  <span class="grey-text horizontal-actual-price"
+                    ><img
+                      class="grey-horizontal-currency-img"
+                      src="../img/grey-india-rupee-currency-symbol.svg"
+                    />499</span
+                  >
+                  <span class="horizontal-discount-text">(32% off)</span>
+                </div>
+
+                <div class="grey-text horizontal-product-description">
+                  FREE Delivery on your first order in this category
+                </div>
+
+                <div class="horizontal-button-container flex">
+                  <button
+                    class="left-text-icon-button primary-button button-medium margin-right"
+                  >
+                    <img
+                      class="xs-avatar left-text-icon-button-img"
+                      src="../img/button/white-shopping-cart.svg"
+                      alt="no-image"
+                    />Add to cart
+                  </button>
+                  <button
+                    class="left-text-icon-button button-outline-light button-medium"
+                  >
+                    <div
+                      class="xs-avatar left-text-icon-button-img horizontal-card-like-img background-property"
+                    ></div>
+                    Wishlist
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;horizontal-product-card margin-bottom&quot;&gt;<br />
+                &lt;div<br />
+                  class=&quot;background-property horizontal-product-image&quot;<br />
+                  style=&quot;background: linear-gradient(rgba(73, 75, 77, 0.1), rgba(73, 75, 77, 0.1)), url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGNvbXBvc3R8ZW58MHx8MHw%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60')&quot;<br />
+                &gt;&lt;/div&gt;<br />
+                &lt;div class=&quot;horizontal-product-content-container&quot;&gt;<br />
+                  &lt;div class=&quot;rating-container&quot;&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;span class=&quot;horizontal-total-reviews&quot;&gt;92&lt;/span&gt;<br />
+                    &lt;span<br />
+                      class=&quot;badge badge-white-secondary horizontal-card-badge&quot;<br />
+                      &gt;BestSeller&lt;/span<br />
+                    &gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;a class=&quot;horizontal-product-heading&quot; href=&quot;#&quot;&gt;<br />
+                    &lt;span<br />
+                      &gt;TrustBasket Organic Vermicompost Fertilizer - 5 KG&lt;/span<br />
+                    &gt;<br />
+                  &lt;/a&gt;<br />
+                  <br />
+                  &lt;div class=&quot;horizontal-price-container&quot;&gt;<br />
+                    &lt;span class=&quot;horizontal-price-text&quot;<br />
+                      &gt;&lt;img<br />
+                        class=&quot;horizontal-currency-img&quot;<br />
+                        src=&quot;../img/india-rupee-currency-symbol.svg&quot;<br />
+                        alt=&quot;no-image&quot;<br />
+                      /&gt;349&lt;/span<br />
+                    &gt;<br />
+                    &lt;span class=&quot;grey-text horizontal-actual-price&quot;<br />
+                      &gt;&lt;img<br />
+                        class=&quot;grey-horizontal-currency-img&quot;<br />
+                        src=&quot;../img/grey-india-rupee-currency-symbol.svg&quot;<br />
+                      /&gt;899&lt;/span<br />
+                    &gt;<br />
+                    &lt;span class=&quot;horizontal-discount-text&quot;&gt;(63% off)&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                  <br />
+                  &lt;div class=&quot;grey-text horizontal-product-description&quot;&gt;<br />
+                    FREE Delivery on your first order in this category<br />
+                  &lt;/div&gt;<br />
+                  <br />
+                  &lt;div class=&quot;horizontal-button-container flex&quot;&gt;<br />
+                    &lt;button<br />
+                      class=&quot;left-text-icon-button primary-button button-medium margin-right&quot;<br />
+                    &gt;<br />
+                      &lt;img<br />
+                        class=&quot;xs-avatar left-text-icon-button-img&quot;<br />
+                        src=&quot;../img/button/white-shopping-cart.svg&quot;<br />
+                        alt=&quot;no-image&quot;<br />
+                      /&gt;Add to cart<br />
+                    &lt;/button&gt;<br />
+                    &lt;button<br />
+                      class=&quot;left-text-icon-button button-outline-light button-medium&quot;<br />
+                    &gt;<br />
+                      &lt;div<br />
+                        class=&quot;xs-avatar left-text-icon-button-img horizontal-card-like-img background-property&quot;<br />
+                      &gt;&lt;/div&gt;<br />
+                      Wishlist<br />
+                    &lt;/button&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;horizontal-product-card&quot;&gt;<br />
+                &lt;div<br />
+                  class=&quot;background-property horizontal-product-image&quot;<br />
+                  style=&quot;background: linear-gradient(rgba(73, 75, 77, 0.1), rgba(73, 75, 77,0.1)), url('https://m.media-amazon.com/images/I/91SkQIkawBL._AC_UL640_QL65_.jpg');&quot;<br />
+                &gt;&lt;/div&gt;<br />
+                &lt;div class=&quot;horizontal-product-content-container&quot;&gt;<br />
+                  &lt;div class=&quot;rating-container&quot;&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;span class=&quot;horizontal-total-reviews&quot;&gt;92&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;a class=&quot;horizontal-product-heading&quot; href=&quot;#&quot;&gt;<br />
+                    &lt;span<br />
+                      &gt;35 Varieties of Seeds with Instruction Manual - 1600+<br />
+                      Seeds&lt;/span<br />
+                    &gt;<br />
+                  &lt;/a&gt;<br />
+                  <br />
+                  &lt;div class=&quot;horizontal-price-container&quot;&gt;<br />
+                    &lt;span class=&quot;horizontal-price-text&quot;<br />
+                      &gt;&lt;img<br />
+                        class=&quot;horizontal-currency-img&quot;<br />
+                        src=&quot;../img/india-rupee-currency-symbol.svg&quot;<br />
+                        alt=&quot;no-image&quot;<br />
+                      /&gt;339&lt;/span<br />
+                    &gt;<br />
+                    &lt;span class=&quot;grey-text horizontal-actual-price&quot;<br />
+                      &gt;&lt;img<br />
+                        class=&quot;grey-horizontal-currency-img&quot;<br />
+                        src=&quot;../img/grey-india-rupee-currency-symbol.svg&quot;<br />
+                      /&gt;499&lt;/span<br />
+                    &gt;<br />
+                    &lt;span class=&quot;horizontal-discount-text&quot;&gt;(32% off)&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                  <br />
+                  &lt;div class=&quot;grey-text horizontal-product-description&quot;&gt;<br />
+                    FREE Delivery on your first order in this category<br />
+                  &lt;/div&gt;<br />
+                  <br />
+                  &lt;div class=&quot;horizontal-button-container flex&quot;&gt;<br />
+                    &lt;button<br />
+                      class=&quot;left-text-icon-button primary-button button-medium margin-right&quot;<br />
+                    &gt;<br />
+                      &lt;img<br />
+                        class=&quot;xs-avatar left-text-icon-button-img&quot;<br />
+                        src=&quot;../img/button/white-shopping-cart.svg&quot;<br />
+                        alt=&quot;no-image&quot;<br />
+                      /&gt;Add to cart<br />
+                    &lt;/button&gt;<br />
+                    &lt;button<br />
+                      class=&quot;left-text-icon-button button-outline-light button-medium&quot;<br />
+                    &gt;<br />
+                      &lt;div<br />
+                        class=&quot;xs-avatar left-text-icon-button-img horizontal-card-like-img background-property&quot;<br />
+                      &gt;&lt;/div&gt;<br />
+                      Wishlist<br />
+                    &lt;/button&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Cards with shadow</h3>
+
+          <div class="section-card flex">
+            <div class="vertical-product-card margin-right card-box-shadow">
+              <div
+                class="background-property vertical-product-image"
+                style="background: linear-gradient(rgba(73, 75, 77, 0.1), rgba(73, 75, 77,0.1)), url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGNvbXBvc3R8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60');"
+              >
+                <span class="badge badge-white-secondary vertical-card-badge"
+                  >BestSeller</span
+                >
+              </div>
+              <div class="vertical-product-content-container">
+                <div class="rating-container">
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <span class="vertical-total-reviews">92</span>
+                </div>
+                <a class="vertical-product-heading" href="#">
+                  <span
+                    >TrustBasket Organic Vermicompost Fertilizer - 5 KG</span
+                  >
+                </a>
+                <div class="vertical-price-container">
+                  <span class="vertical-price-text"
+                    ><img
+                      class="vertical-currency-img"
+                      src="../img/india-rupee-currency-symbol.svg"
+                      alt="no-image"
+                    />349</span
+                  >
+                  <span class="grey-text vertical-actual-price"
+                    ><img
+                      class="grey-vertical-currency-img"
+                      src="../img/grey-india-rupee-currency-symbol.svg"
+                    />899</span
+                  >
+                  <span class="vertical-discount-text">(63% off)</span>
+                </div>
+                <div class="grey-text vertical-product-description">
+                  FREE Delivery on your first order in this category
+                </div>
+              </div>
+            </div>
+
+            <div class="vertical-product-card margin-right card-box-shadow">
+              <div
+                class="background-property vertical-product-image"
+                style="background:linear-gradient(rgba(73, 75, 77, 0.1), rgba(73, 75, 77, 0.1)),     
+              url('https://images-na.ssl-images-amazon.com/images/I/61QuYX6mp5L._SL1280_.jpg');"
+              ></div>
+              <div class="vertical-product-content-container">
+                <div class="rating-container">
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <img
+                    class="xs-avatar rating-container-img"
+                    src="../img/star.svg"
+                  />
+                  <span class="vertical-total-reviews">102</span>
+                </div>
+                <a class="vertical-product-heading" href="#">
+                  <span
+                    >Kraft Seeds Garden Tools Set Trowel (Multicolour, 5
+                    Pieces)</span
+                  >
+                </a>
+                <div class="vertical-price-container">
+                  <span class="vertical-price-text"
+                    ><img
+                      class="vertical-currency-img"
+                      src="../img/india-rupee-currency-symbol.svg"
+                      alt="no-image"
+                    />299</span
+                  >
+                </div>
+                <div class="grey-text vertical-product-description">
+                  FREE Delivery on your first order in this category
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;vertical-product-card margin-right card-box-shadow&quot;&gt;<br />
+                &lt;div<br />
+                  class=&quot;background-property vertical-product-image&quot;<br />
+                  style=&quot;background: linear-gradient(rgba(73, 75, 77, 0.1), rgba(73, 75, 77,0.1)), url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzJ8fGNvbXBvc3R8ZW58MHx8MHw%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60');&quot;<br />
+                &gt;<br />
+                  &lt;span class=&quot;badge badge-white-secondary vertical-card-badge&quot;<br />
+                    &gt;BestSeller&lt;/span<br />
+                  &gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div class=&quot;vertical-product-content-container&quot;&gt;<br />
+                  &lt;div class=&quot;rating-container&quot;&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;span class=&quot;vertical-total-reviews&quot;&gt;92&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;a class=&quot;vertical-product-heading&quot; href=&quot;#&quot;&gt;<br />
+                    &lt;span<br />
+                      &gt;TrustBasket Organic Vermicompost Fertilizer - 5 KG&lt;/span<br />
+                    &gt;<br />
+                  &lt;/a&gt;<br />
+                  &lt;div class=&quot;vertical-price-container&quot;&gt;<br />
+                    &lt;span class=&quot;vertical-price-text&quot;<br />
+                      &gt;&lt;img<br />
+                        class=&quot;vertical-currency-img&quot;<br />
+                        src=&quot;../img/india-rupee-currency-symbol.svg&quot;<br />
+                        alt=&quot;no-image&quot;<br />
+                      /&gt;349&lt;/span<br />
+                    &gt;<br />
+                    &lt;span class=&quot;grey-text vertical-actual-price&quot;<br />
+                      &gt;&lt;img<br />
+                        class=&quot;grey-vertical-currency-img&quot;<br />
+                        src=&quot;../img/grey-india-rupee-currency-symbol.svg&quot;<br />
+                      /&gt;899&lt;/span<br />
+                    &gt;<br />
+                    &lt;span class=&quot;vertical-discount-text&quot;&gt;(63% off)&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div class=&quot;grey-text vertical-product-description&quot;&gt;<br />
+                    FREE Delivery on your first order in this category<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;vertical-product-card margin-right card-box-shadow&quot;&gt;<br />
+                &lt;div<br />
+                  class=&quot;background-property vertical-product-image&quot;<br />
+                  style=&quot;background:linear-gradient(rgba(73, 75, 77, 0.1), rgba(73, 75, 77, 0.1)),     <br />
+                url('https://images-na.ssl-images-amazon.com/images/I/61QuYX6mp5L._SL1280_.jpg');&quot;<br />
+                &gt;&lt;/div&gt;<br />
+                &lt;div class=&quot;vertical-product-content-container&quot;&gt;<br />
+                  &lt;div class=&quot;rating-container&quot;&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;img<br />
+                      class=&quot;xs-avatar rating-container-img&quot;<br />
+                      src=&quot;../img/star.svg&quot;<br />
+                    /&gt;<br />
+                    &lt;span class=&quot;vertical-total-reviews&quot;&gt;102&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;a class=&quot;vertical-product-heading&quot; href=&quot;#&quot;&gt;<br />
+                    &lt;span<br />
+                      &gt;Kraft Seeds Garden Tools Set Trowel (Multicolour, 5<br />
+                      Pieces)&lt;/span<br />
+                    &gt;<br />
+                  &lt;/a&gt;<br />
+                  &lt;div class=&quot;vertical-price-container&quot;&gt;<br />
+                    &lt;span class=&quot;vertical-price-text&quot;<br />
+                      &gt;&lt;img<br />
+                        class=&quot;vertical-currency-img&quot;<br />
+                        src=&quot;../img/india-rupee-currency-symbol.svg&quot;<br />
+                        alt=&quot;no-image&quot;<br />
+                      /&gt;299&lt;/span<br />
+                    &gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div class=&quot;grey-text vertical-product-description&quot;&gt;<br />
+                    FREE Delivery on your first order in this category<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section
+          class="image-section section-container"
+          id="image"
+          style="display: none"
+        >
+          <h2 class="section-heading">Image</h2>
+          <h3 class="section-subheading">Responsive Image</h3>
+
+          <div class="section-card">
+            <div class="responsive-img-container">
+              <img
+                class="responsive-img"
+                src="https://images.unsplash.com/photo-1603295499339-ef34dd2df07e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTN8fGdhcmRlbmluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+              />
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+              &lt;div class=&quot;responsive-img-container&quot;&gt;<br />
+              &lt;img<br />
+                class=&quot;responsive-img&quot;<br />
+                src=&quot;https://images.unsplash.com/photo-1603295499339-ef34dd2df07e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTN8fGdhcmRlbmluZ3xlbnwwfHwwfA%3D%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60&quot;<br />
+              /&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Round Image</h3>
+
+          <div class="section-card">
+            <div class="round-img-container">
+              <img
+                class="round-img"
+                src="https://images.unsplash.com/photo-1615285041233-5652f99d8923?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGdhcmRlbmluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+              />
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;round-img-container&quot;&gt;<br />
+                &lt;img<br />
+                  class=&quot;round-img&quot;<br />
+                  src=&quot;https://images.unsplash.com/photo-1615285041233-5652f99d8923?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGdhcmRlbmluZ3xlbnwwfHwwfA%3D%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60&quot;<br />
+                /&gt;<br />
+                &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section
+          class="input-section section-container"
+          id="input"
+          style="display: none"
+        >
+          <h2 class="section-heading">Input</h2>
+          <h3 class="section-subheading">Usage</h3>
+
+          <div class="section-card flex">
+            <div class="input-container margin-right">
+              <span class="inside-input-info grey-text">
+                <span class="input-img"
+                  ><img class="xs-avatar" src="../img/envelope.svg"
+                /></span>
+                <span class="input-line">|</span>
+              </span>
+              <input type="text" placeholder="Email *" class="input-field" />
+            </div>
+
+            <div class="input-container">
+              <span class="inside-input-info grey-text">
+                <span class="input-img"
+                  ><img class="xs-avatar" src="../img/envelope.svg"
+                /></span>
+                <span class="input-line">|</span>
+                <!-- <span class="input-placeholder" id="error-input-placeholder">
+                  <span> Email </span><span class="required">*</span>
+                </span> -->
+              </span>
+              <input
+                type="text"
+                placeholder="Email *"
+                class="error-input input-field"
+              />
+              <div class="error-container small-text">
+                Please enter the valid email Id
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;input-container margin-right&quot;&gt;<br />
+                &lt;span class=&quot;inside-input-info grey-text&quot;&gt;<br />
+                  &lt;span class=&quot;input-img&quot;<br />
+                    &gt;&lt;img class=&quot;xs-avatar&quot; src=&quot;../img/envelope.svg&quot;<br />
+                  /&gt;&lt;/span&gt;<br />
+                  &lt;span class=&quot;input-line&quot;&gt;|&lt;/span&gt;<br />
+                &lt;/span&gt;<br />
+                &lt;input<br />
+                  type=&quot;text&quot;<br />
+                  placeholder=&quot;Email *&quot;<br />
+                  class=&quot;input-field&quot;<br />
+                /&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;input-container&quot;&gt;<br />
+                &lt;span class=&quot;inside-input-info grey-text&quot;&gt;<br />
+                  &lt;span class=&quot;input-img&quot;<br />
+                    &gt;&lt;img class=&quot;xs-avatar&quot; src=&quot;../img/envelope.svg&quot;<br />
+                  /&gt;&lt;/span&gt;<br />
+                  &lt;span class=&quot;input-line&quot;&gt;|&lt;/span&gt;<br />
+                &lt;/span&gt;<br />
+                &lt;input<br />
+                  type=&quot;text&quot;<br />
+                  placeholder=&quot;Email *&quot;<br />
+                  class=&quot;error-input input-field&quot;<br />
+                /&gt;<br />
+                &lt;div class=&quot;error-container small-text&quot;&gt;<br />
+                  Please enter the valid email Id<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h2 class="section-heading">Checkbox</h2>
+          <h3 class="section-subheading">Usage</h3>
+          <div class="section-card flex">
+            <input type="checkbox" />
+          </div>
+
+          <pre>
+            <code class="language-markup">
+              &lt;input type=&quot;checkbox&quot; /&gt; 
+            </code>
+          </pre>
+        </section>
+
+        <section
+          class="list-section section-container"
+          id="list"
+          style="display: none"
+        >
+          <h2 class="section-heading">List</h2>
+          <h3 class="section-subheading">Stacked List</h3>
+
+          <div class="stacked-section">
+            <div class="stacked-list-container">
+              <div class="stacked-list-header">
+                <span>Notifications</span>
+              </div>
+              <div class="stacked-list-body">
+                <div class="single-stacked-list-container">
+                  <img
+                    class="margin-right avatar-img md-avatar"
+                    src="https://randomuser.me/api/portraits/women/63.jpg"
+                    alt="no-image"
+                  />
+                  <div class="stacked-list-description">
+                    <span class="notifiy-user">John Doe</span
+                    ><span class="stacked-list-text">liked your photo</span>
+                    <span class="stacked-list-timestamp">4 hours ago</span>
+                  </div>
+                </div>
+                <div class="single-stacked-list-container">
+                  <img
+                    class="margin-right avatar-img md-avatar"
+                    src="https://randomuser.me/api/portraits/men/86.jpg"
+                    alt="no-image"
+                  />
+                  <div class="stacked-list-description">
+                    <span class="notifiy-user">Kervin</span
+                    ><span class="stacked-list-text"
+                      >commented your photo
+                      <span class="stacked-list-info"
+                        >"This post is very useful thank you for sharing."</span
+                      ></span
+                    >
+                    <span class="stacked-list-timestamp">a day ago</span>
+                  </div>
+                </div>
+                <div class="single-stacked-list-container">
+                  <img
+                    class="margin-right avatar-img md-avatar"
+                    src="https://randomuser.me/api/portraits/men/47.jpg"
+                    alt="no-image"
+                  />
+                  <div class="stacked-list-description">
+                    <span class="notifiy-user">Ritesh</span
+                    ><span class="stacked-list-text"
+                      >commented your photo
+                      <span class="stacked-list-info"
+                        >"This post is very useful thank you for sharing."</span
+                      ></span
+                    >
+                    <span class="stacked-list-timestamp">1 day ago</span>
+                  </div>
+                </div>
+                <div class="single-stacked-list-container">
+                  <img
+                    class="margin-right avatar-img md-avatar"
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    alt="no-image"
+                  />
+                  <div class="stacked-list-description">
+                    <span class="notifiy-user">Alwin</span
+                    ><span class="stacked-list-text"
+                      >commented your photo
+                      <span class="stacked-list-info"
+                        >"This post is very useful thank you for sharing."</span
+                      ></span
+                    >
+                    <span class="stacked-list-timestamp">2 days ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;stacked-list-container&quot;&gt;<br />
+                &lt;div class=&quot;stacked-list-header&quot;&gt;<br />
+                  &lt;span&gt;Notifications&lt;/span&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div class=&quot;stacked-list-body&quot;&gt;<br />
+                  &lt;div class=&quot;single-stacked-list-container&quot;&gt;<br />
+                    &lt;img<br />
+                      class=&quot;margin-right avatar-img md-avatar&quot;<br />
+                      src=&quot;https://randomuser.me/api/portraits/women/63.jpg&quot;<br />
+                      alt=&quot;no-image&quot;<br />
+                    /&gt;<br />
+                    &lt;div class=&quot;stacked-list-description&quot;&gt;<br />
+                      &lt;span class=&quot;notifiy-user&quot;&gt;John Doe&lt;/span<br />
+                      &gt;&lt;span class=&quot;stacked-list-text&quot;&gt;liked your photo&lt;/span&gt;<br />
+                      &lt;span class=&quot;stacked-list-timestamp&quot;&gt;4 hours ago&lt;/span&gt;<br />
+                    &lt;/div&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div class=&quot;single-stacked-list-container&quot;&gt;<br />
+                    &lt;img<br />
+                      class=&quot;margin-right avatar-img md-avatar&quot;<br />
+                      src=&quot;https://randomuser.me/api/portraits/men/86.jpg&quot;<br />
+                      alt=&quot;no-image&quot;<br />
+                    /&gt;<br />
+                    &lt;div class=&quot;stacked-list-description&quot;&gt;<br />
+                      &lt;span class=&quot;notifiy-user&quot;&gt;Kervin&lt;/span<br />
+                      &gt;&lt;span class=&quot;stacked-list-text&quot;<br />
+                        &gt;commented your photo<br />
+                        &lt;span class=&quot;stacked-list-info&quot;<br />
+                          &gt;&quot;This post is very useful thank you for sharing.&quot;&lt;/span<br />
+                        &gt;&lt;/span<br />
+                      &gt;<br />
+                      &lt;span class=&quot;stacked-list-timestamp&quot;&gt;a day ago&lt;/span&gt;<br />
+                    &lt;/div&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div class=&quot;single-stacked-list-container&quot;&gt;<br />
+                    &lt;img<br />
+                      class=&quot;margin-right avatar-img md-avatar&quot;<br />
+                      src=&quot;https://randomuser.me/api/portraits/men/47.jpg&quot;<br />
+                      alt=&quot;no-image&quot;<br />
+                    /&gt;<br />
+                    &lt;div class=&quot;stacked-list-description&quot;&gt;<br />
+                      &lt;span class=&quot;notifiy-user&quot;&gt;Ritesh&lt;/span<br />
+                      &gt;&lt;span class=&quot;stacked-list-text&quot;<br />
+                        &gt;commented your photo<br />
+                        &lt;span class=&quot;stacked-list-info&quot;<br />
+                          &gt;&quot;This post is very useful thank you for sharing.&quot;&lt;/span<br />
+                        &gt;&lt;/span<br />
+                      &gt;<br />
+                      &lt;span class=&quot;stacked-list-timestamp&quot;&gt;1 day ago&lt;/span&gt;<br />
+                    &lt;/div&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div class=&quot;single-stacked-list-container&quot;&gt;<br />
+                    &lt;img<br />
+                      class=&quot;margin-right avatar-img md-avatar&quot;<br />
+                      src=&quot;https://randomuser.me/api/portraits/men/32.jpg&quot;<br />
+                      alt=&quot;no-image&quot;<br />
+                    /&gt;<br />
+                    &lt;div class=&quot;stacked-list-description&quot;&gt;<br />
+                      &lt;span class=&quot;notifiy-user&quot;&gt;Alwin&lt;/span<br />
+                      &gt;&lt;span class=&quot;stacked-list-text&quot;<br />
+                        &gt;commented your photo<br />
+                        &lt;span class=&quot;stacked-list-info&quot;<br />
+                          &gt;&quot;This post is very useful thank you for sharing.&quot;&lt;/span<br />
+                        &gt;&lt;/span<br />
+                      &gt;<br />
+                      &lt;span class=&quot;stacked-list-timestamp&quot;&gt;2 days ago&lt;/span&gt;<br />
+                    &lt;/div&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Spaced List</h3>
+
+          <div class="spaced-section">
+            <div class="spaced-list-container">
+              <div class="single-spaced-list-container">
+                <div class="spaced-list-description">
+                  <span class="spaced-list-heading">John Doe</span>
+                  <span class="spaced-list-text"
+                    >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorum possimus quasi provident illo minima architecto in
+                    omnis, excepturi aut eum porro ipsam magnam debitis
+                    dignissimos quidem placeat nemo. Cupiditate,
+                    repudiandae!</span
+                  >
+                  <span class="spaced-list-timestamp">4 hours ago</span>
+                </div>
+              </div>
+              <div class="single-spaced-list-container">
+                <div class="spaced-list-description">
+                  <span class="spaced-list-heading">Kervin Smith</span>
+                  <span class="spaced-list-text"
+                    >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorum possimus quasi provident illo minima architecto in
+                    omnis, excepturi aut eum porro ipsam magnam debitis
+                    dignissimos quidem placeat nemo. Cupiditate,
+                    repudiandae!</span
+                  >
+                  <span class="spaced-list-timestamp">4 hours ago</span>
+                </div>
+              </div>
+              <div class="single-spaced-list-container">
+                <div class="spaced-list-description">
+                  <span class="spaced-list-heading">Alwin</span>
+                  <span class="spaced-list-text"
+                    >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorum possimus quasi provident illo minima architecto in
+                    omnis, excepturi aut eum porro ipsam magnam debitis
+                    dignissimos quidem placeat nemo. Cupiditate,
+                    repudiandae!</span
+                  >
+                  <span class="spaced-list-timestamp">4 hours ago</span>
+                </div>
+              </div>
+              <div class="single-spaced-list-container">
+                <div class="spaced-list-description">
+                  <span class="spaced-list-heading">Ritesh</span>
+                  <span class="spaced-list-text"
+                    >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorum possimus quasi provident illo minima architecto in
+                    omnis, excepturi aut eum porro ipsam magnam debitis
+                    dignissimos quidem placeat nemo. Cupiditate,
+                    repudiandae!</span
+                  >
+                  <span class="spaced-list-timestamp">4 hours ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;spaced-list-container&quot;&gt;<br />
+                &lt;div class=&quot;single-spaced-list-container&quot;&gt;<br />
+                  &lt;div class=&quot;spaced-list-description&quot;&gt;<br />
+                    &lt;span class=&quot;spaced-list-heading&quot;&gt;John Doe&lt;/span&gt;<br />
+                    &lt;span class=&quot;spaced-list-text&quot;<br />
+                      &gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+                      Dolorum possimus quasi provident illo minima architecto in<br />
+                      omnis, excepturi aut eum porro ipsam magnam debitis<br />
+                      dignissimos quidem placeat nemo. Cupiditate,<br />
+                      repudiandae!&lt;/span<br />
+                    &gt;<br />
+                    &lt;span class=&quot;spaced-list-timestamp&quot;&gt;4 hours ago&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div class=&quot;single-spaced-list-container&quot;&gt;<br />
+                  &lt;div class=&quot;spaced-list-description&quot;&gt;<br />
+                    &lt;span class=&quot;spaced-list-heading&quot;&gt;Kervin Smith&lt;/span&gt;<br />
+                    &lt;span class=&quot;spaced-list-text&quot;<br />
+                      &gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+                      Dolorum possimus quasi provident illo minima architecto in<br />
+                      omnis, excepturi aut eum porro ipsam magnam debitis<br />
+                      dignissimos quidem placeat nemo. Cupiditate,<br />
+                      repudiandae!&lt;/span<br />
+                    &gt;<br />
+                    &lt;span class=&quot;spaced-list-timestamp&quot;&gt;4 hours ago&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div class=&quot;single-spaced-list-container&quot;&gt;<br />
+                  &lt;div class=&quot;spaced-list-description&quot;&gt;<br />
+                    &lt;span class=&quot;spaced-list-heading&quot;&gt;Alwin&lt;/span&gt;<br />
+                    &lt;span class=&quot;spaced-list-text&quot;<br />
+                      &gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+                      Dolorum possimus quasi provident illo minima architecto in<br />
+                      omnis, excepturi aut eum porro ipsam magnam debitis<br />
+                      dignissimos quidem placeat nemo. Cupiditate,<br />
+                      repudiandae!&lt;/span<br />
+                    &gt;<br />
+                    &lt;span class=&quot;spaced-list-timestamp&quot;&gt;4 hours ago&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div class=&quot;single-spaced-list-container&quot;&gt;<br />
+                  &lt;div class=&quot;spaced-list-description&quot;&gt;<br />
+                    &lt;span class=&quot;spaced-list-heading&quot;&gt;Ritesh&lt;/span&gt;<br />
+                    &lt;span class=&quot;spaced-list-text&quot;<br />
+                      &gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+                      Dolorum possimus quasi provident illo minima architecto in<br />
+                      omnis, excepturi aut eum porro ipsam magnam debitis<br />
+                      dignissimos quidem placeat nemo. Cupiditate,<br />
+                      repudiandae!&lt;/span<br />
+                    &gt;<br />
+                    &lt;span class=&quot;spaced-list-timestamp&quot;&gt;4 hours ago&lt;/span&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section
+          class="navigation-section section-container"
+          id="navigation"
+          style="display: none"
+        >
+          <h2 class="section-heading">Navigation</h2>
+          <h3 class="section-subheading">Usage</h3>
+
+          <div class="section-card">
+            <nav class="nav nav-background">
+              <img
+                src="../img/green-leaf-logo.svg"
+                class="logo-img"
+                alt="no-image"
+              />
+              <h1 class="logo-heading">GOGreen</h1>
+              <ul class="navbar-unordered-list">
+                <li class="nav-list-item">
+                  <div
+                    class="github-image background-property background-github-image"
+                  ></div>
+                </li>
+                <li class="nav-list-item">
+                  <div
+                    class="moon-image background-property background-moon-image"
+                  ></div>
+                </li>
+                <li class="nav-list-item hamburger-list-item">
+                  <div
+                    class="hamburger-image background-property background-hamburger-image"
+                  ></div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;nav class=&quot;nav nav-background&quot;&gt;<br />
+                &lt;img<br />
+                  src=&quot;../img/green-leaf-logo.svg&quot;<br />
+                  class=&quot;logo-img&quot;<br />
+                  alt=&quot;no-image&quot;<br />
+                /&gt;<br />
+                &lt;h1 class=&quot;logo-heading&quot;&gt;GOGreen&lt;/h1&gt;<br />
+                &lt;ul class=&quot;navbar-unordered-list&quot;&gt;<br />
+                  &lt;li class=&quot;nav-list-item&quot;&gt;<br />
+                    &lt;div class=&quot;github-image background-property background-github-image&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/li&gt;<br />
+                  &lt;li class=&quot;nav-list-item&quot;&gt;<br />
+                    &lt;div class=&quot;moon-image background-property background-moon-image&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/li&gt;<br />
+                  &lt;li class=&quot;nav-list-item hamburger-list-item&quot;&gt;<br />
+                    &lt;div class=&quot;hamburger-image background-property background-hamburger-image&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/li&gt;<br />
+                &lt;/ul&gt;<br />
+              &lt;/nav&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section
+          class="modal-section section-container"
+          id="modal"
+          style="display: none"
+        >
+          <h2 class="section-heading">Modal</h2>
+
+          <h3 class="section-subheading">Usage</h3>
+
+          <div class="section-card">
+            <button class="light-button button-medium" id="active-modal">
+              Open Modal
+            </button>
+            <div
+              class="modal-container"
+              style="display: none"
+              id="modal-container"
+            >
+              <div class="modal-card margin-bottom">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal Title</h4>
+                </div>
+                <div class="modal-card-body">
+                  <p class="modal-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Praesentium esse ex ipsam nesciunt molestiae perferendis
+                    repellendus reiciendis voluptatum sequi deserunt illo,
+                    temporibus fugiat eaque. Libero consequuntur deleniti
+                    voluptatem vitae? Molestias.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="light-button button-small margin-right"
+                    id="unactive-modal"
+                  >
+                    Cancel
+                  </button>
+                  <button class="primary-button button-small">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;button class=&quot;light-button button-medium&quot; id=&quot;active-modal&quot;&gt;<br />
+                Open Modal<br />
+              &lt;/button&gt;<br />
+              &lt;div<br />
+                class=&quot;modal-container&quot;<br />
+                style=&quot;display: none&quot;<br />
+                id=&quot;modal-container&quot;<br />
+              &gt;<br />
+                &lt;div class=&quot;modal-card margin-bottom&quot;&gt;<br />
+                  &lt;div class=&quot;modal-header&quot;&gt;<br />
+                    &lt;h4 class=&quot;modal-title&quot;&gt;Modal Title&lt;/h4&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div class=&quot;modal-card-body&quot;&gt;<br />
+                    &lt;p class=&quot;modal-description&quot;&gt;<br />
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />
+                      Praesentium esse ex ipsam nesciunt molestiae perferendis<br />
+                      repellendus reiciendis voluptatum sequi deserunt illo,<br />
+                      temporibus fugiat eaque. Libero consequuntur deleniti<br />
+                      voluptatem vitae? Molestias.<br />
+                    &lt;/p&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div class=&quot;modal-footer&quot;&gt;<br />
+                    &lt;button<br />
+                      class=&quot;light-button button-small margin-right&quot;<br />
+                      id=&quot;unactive-modal&quot;<br />
+                    &gt;<br />
+                      Cancel<br />
+                    &lt;/button&gt;<br />
+                    &lt;button class=&quot;primary-button button-small&quot;&gt;Save&lt;/button&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section
+          class="rating-section section-container"
+          id="rating"
+          style="display: none"
+        >
+          <h2 class="section-heading">Rating</h2>
+          <h3 class="section-subheading">Usage</h3>
+
+          <div class="section-card">
+            <div class="rating-container">
+              <img
+                class="xs-avatar rating-container-img"
+                src="../img/star.svg"
+              />
+              <img
+                class="xs-avatar rating-container-img"
+                src="../img/star.svg"
+              />
+              <img
+                class="xs-avatar rating-container-img"
+                src="../img/star.svg"
+              />
+              <img
+                class="xs-avatar rating-container-img"
+                src="../img/star-outline.svg"
+              />
+              <img
+                class="xs-avatar rating-container-img"
+                src="../img/star-outline.svg"
+              />
+              <span class="vertical-total-reviews">92</span>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+              &lt;div class=&quot;rating-container&quot;&gt;<br />
+              &lt;img class=&quot;xs-avatar rating-container-img&quot; src=&quot;../img/star.svg&quot; /&gt;<br />
+              &lt;img class=&quot;xs-avatar rating-container-img&quot; src=&quot;../img/star.svg&quot; /&gt;<br />
+              &lt;img class=&quot;xs-avatar rating-container-img&quot; src=&quot;../img/star.svg&quot; /&gt;<br />
+              &lt;img<br />
+                class=&quot;xs-avatar rating-container-img&quot;<br />
+                src=&quot;../img/star-outline.svg&quot;<br />
+              /&gt;<br />
+              &lt;img<br />
+                class=&quot;xs-avatar rating-container-img&quot;<br />
+                src=&quot;../img/star-outline.svg&quot;<br />
+              /&gt;<br />
+              &lt;span class=&quot;vertical-total-reviews&quot;&gt;92&lt;/span&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section
+          class="slider-section section-container"
+          id="slider"
+          style="display: none"
+        >
+          <h2 class="section-heading">Range Slider</h2>
+          <h3 class="section-subheading">Usage</h3>
+
+          <div class="section-card">
+            <input type="range" min="1" max="100" value="50" />
+          </div>
+
+          <pre>
+            <code class="language-markup">
+              &lt;input type=&quot;range&quot; min=&quot;1&quot; max=&quot;100&quot; value=&quot;50&quot; /&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section
+          class="grid-section section-container"
+          id="grid"
+          style="display: none"
+        >
+          <h2 class="section-heading">Grid</h2>
+          <h3 class="section-subheading">Two items in a grid</h3>
+
+          <div class="section-card">
+            <div class="grid-two-items">
+              <div class="grid-two-items-content-div">
+                <h3>Grid Item 1</h3>
+              </div>
+              <div class="grid-two-items-content-div">
+                <h3>Grid Item 2</h3>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+              &lt;div class=&quot;grid-two-items&quot;&gt;<br />
+              &lt;div class=&quot;grid-two-items-content-div&quot;&gt;<br />
+                &lt;h3&gt;Grid Item 1&lt;/h3&gt;<br />
+              &lt;/div&gt;<br />
+              &lt;div class=&quot;grid-two-items-content-div&quot;&gt;<br />
+                &lt;h3&gt;Grid Item 2&lt;/h3&gt;<br />
+              &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Three items in a grid</h3>
+
+          <div class="section-card">
+            <div class="grid-three-items">
+              <div class="grid-three-items-content-div">
+                <h3>Grid Item 1</h3>
+              </div>
+              <div class="grid-three-items-content-div">
+                <h3>Grid Item 2</h3>
+              </div>
+              <div class="grid-three-items-content-div">
+                <h3>Grid Item 3</h3>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;grid-three-items&quot;&gt;<br />
+                &lt;div class=&quot;grid-three-items-content-div&quot;&gt;<br />
+                  &lt;h3&gt;Grid Item 1&lt;/h3&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div class=&quot;grid-three-items-content-div&quot;&gt;<br />
+                  &lt;h3&gt;Grid Item 2&lt;/h3&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div class=&quot;grid-three-items-content-div&quot;&gt;<br />
+                  &lt;h3&gt;Grid Item 3&lt;/h3&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section
+          class="text-section section-container"
+          id="text-utilities"
+          style="display: none"
+        >
+          <h2 class="section-heading">Text Utilities</h2>
+          <h3 class="section-subheading">Usage</h3>
+
+          <div class="section-card">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <p>Paragraph Text</p>
+            <div class="small-text">Small Text</div>
+            <p class="grey-text">Grey Text</p>
+            <h3 class="text-center">Center Text</h3>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+              &lt;h1&gt;Heading 1&lt;/h1&gt;<br />
+              &lt;h2&gt;Heading 2&lt;/h2&gt;<br />
+              &lt;h3&gt;Heading 3&lt;/h3&gt;<br />
+              &lt;h4&gt;Heading 4&lt;/h4&gt;<br />
+              &lt;p&gt;Paragraph Text&lt;/p&gt;<br />
+              &lt;div class=&quot;small-text&quot;&gt;Small Text&lt;/div&gt;<br />
+              &lt;p class=&quot;grey-text&quot;&gt;Grey Text&lt;/p&gt;<br />
+              &lt;h3 class=&quot;text-center&quot;&gt;Center Text&lt;/h3&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section
+          class="toast-section section-container"
+          id="toast"
+          style="display: none"
+        >
+          <h2 class="section-heading">Toast</h2>
+
+          <h3 class="section-subheading">Usage</h3>
+
+          <div class="section-card">
+            <div class="toast-card error-toast margin-bottom">
+              <div class="toast-body">
+                <img
+                  class="toast-img-icon sm-avatar"
+                  src="../img/toast/cancel.svg"
+                />
+                <h4 class="toast-title">A simple Error toast—check it out!</h4>
+                <button class="icon-button toast-close-button">
+                  <div class="toast-close-img background-property"></div>
+                </button>
+              </div>
+            </div>
+
+            <div class="toast-card success-toast margin-bottom">
+              <div class="toast-body">
+                <img
+                  class="toast-img-icon sm-avatar"
+                  src="../img/toast/check.svg"
+                />
+                <h4 class="toast-title">
+                  A simple Success toast—check it out!
+                </h4>
+                <button class="icon-button toast-close-button">
+                  <div class="toast-close-img background-property"></div>
+                </button>
+              </div>
+            </div>
+
+            <div class="toast-card warning-toast margin-bottom">
+              <div class="toast-body">
+                <img
+                  class="toast-img-icon sm-avatar"
+                  src="../img/toast/warning.svg"
+                />
+                <h4 class="toast-title">
+                  A simple Warning toast—check it out!
+                </h4>
+                <button class="icon-button toast-close-button">
+                  <div class="toast-close-img background-property"></div>
+                </button>
+              </div>
+            </div>
+
+            <div class="toast-card info-toast margin-bottom">
+              <div class="toast-body">
+                <img
+                  class="toast-img-icon sm-avatar"
+                  src="../img/toast/info-button.svg"
+                />
+                <h4 class="toast-title">A simple Info toast—check it out!</h4>
+                <button class="icon-button toast-close-button">
+                  <div class="toast-close-img background-property"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;toast-card error-toast margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;toast-body&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;toast-img-icon sm-avatar&quot;<br />
+                    src=&quot;../img/toast/cancel.svg&quot;<br />
+                  /&gt;<br />
+                  &lt;h4 class=&quot;toast-title&quot;&gt;A simple Error toast&mdash;check it out!&lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button toast-close-button&quot;&gt;<br />
+                    &lt;div class=&quot;toast-close-img background-property&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;toast-card success-toast margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;toast-body&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;toast-img-icon sm-avatar&quot;<br />
+                    src=&quot;../img/toast/check.svg&quot;<br />
+                  /&gt;<br />
+                  &lt;h4 class=&quot;toast-title&quot;&gt;<br />
+                    A simple Success toast&mdash;check it out!<br />
+                  &lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button toast-close-button&quot;&gt;<br />
+                    &lt;div class=&quot;toast-close-img background-property&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;toast-card warning-toast margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;toast-body&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;toast-img-icon sm-avatar&quot;<br />
+                    src=&quot;../img/toast/warning.svg&quot;<br />
+                  /&gt;<br />
+                  &lt;h4 class=&quot;toast-title&quot;&gt;<br />
+                    A simple Warning toast&mdash;check it out!<br />
+                  &lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button toast-close-button&quot;&gt;<br />
+                    &lt;div class=&quot;toast-close-img background-property&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;toast-card info-toast margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;toast-body&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;toast-img-icon sm-avatar&quot;<br />
+                    src=&quot;../img/toast/info-button.svg&quot;<br />
+                  /&gt;<br />
+                  &lt;h4 class=&quot;toast-title&quot;&gt;A simple Info toast&mdash;check it out!&lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button toast-close-button&quot;&gt;<br />
+                    &lt;div class=&quot;toast-close-img background-property&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Styles</h3>
+
+          <div class="section-card">
+            <div class="toast-card success-toast margin-bottom">
+              <div class="toast-body">
+                <img
+                  class="toast-img-icon sm-avatar"
+                  src="../img/toast/check.svg"
+                />
+                <h4 class="toast-title">
+                  A simple Success toast—check it out!
+                </h4>
+                <button class="icon-button toast-close-button">
+                  <div class="toast-close-img background-property"></div>
+                </button>
+              </div>
+            </div>
+
+            <div class="toast-card success-toast-dark-background margin-bottom">
+              <div class="toast-body">
+                <img
+                  class="toast-img-icon sm-avatar"
+                  src="../img/toast/white-check.svg"
+                />
+                <h4 class="toast-title">
+                  A simple Success toast—check it out!
+                </h4>
+                <button class="icon-button toast-close-button">
+                  <img
+                    class="toast-white-close-img"
+                    src="../img/toast/white-cross.svg"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="toast-card success-toast-light-background margin-bottom"
+            >
+              <div class="toast-body">
+                <img
+                  class="toast-img-icon sm-avatar"
+                  src="../img/toast/check.svg"
+                />
+                <h4 class="toast-title">
+                  A simple Success toast—check it out!
+                </h4>
+                <button class="icon-button toast-close-button">
+                  <div class="toast-close-img background-property"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;div class=&quot;toast-card success-toast margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;toast-body&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;toast-img-icon sm-avatar&quot;<br />
+                    src=&quot;../img/toast/check.svg&quot;<br />
+                  /&gt;<br />
+                  &lt;h4 class=&quot;toast-title&quot;&gt;<br />
+                    A simple Success toast&mdash;check it out!<br />
+                  &lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button toast-close-button&quot;&gt;<br />
+                    &lt;div class=&quot;toast-close-img background-property&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;toast-card success-toast-dark-background margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;toast-body&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;toast-img-icon sm-avatar&quot;<br />
+                    src=&quot;../img/toast/white-check.svg&quot;<br />
+                  /&gt;<br />
+                  &lt;h4 class=&quot;toast-title&quot;&gt;<br />
+                    A simple Success toast&mdash;check it out!<br />
+                  &lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button toast-close-button&quot;&gt;<br />
+                    &lt;img<br />
+                      class=&quot;toast-white-close-img&quot;<br />
+                      src=&quot;../img/toast/white-cross.svg&quot;<br />
+                    /&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;toast-card success-toast-light-background margin-bottom&quot;&gt;<br />
+                &lt;div class=&quot;toast-body&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;toast-img-icon sm-avatar&quot;<br />
+                    src=&quot;../img/toast/check.svg&quot;<br />
+                  /&gt;<br />
+                  &lt;h4 class=&quot;toast-title&quot;&gt;<br />
+                    A simple Success toast&mdash;check it out!<br />
+                  &lt;/h4&gt;<br />
+                  &lt;button class=&quot;icon-button toast-close-button&quot;&gt;<br />
+                    &lt;div class=&quot;toast-close-img background-property&quot;&gt;&lt;/div&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+
+          <h3 class="section-subheading">Live Toast</h3>
+
+          <button
+            class="secondary-button button-medium"
+            id="active-error-toast"
+          >
+            Show top error Toast
+          </button>
+          <div
+            class="toast-card error-toast-dark-background margin-bottom toast-top"
+            style="display: none"
+            id="error-toast-container"
+          >
+            <div class="toast-body">
+              <img
+                class="toast-img-icon sm-avatar"
+                src="../img/toast/white-cancel.svg"
+              />
+              <h4 class="toast-title">A simple Error toast—check it out!</h4>
+              <button
+                class="icon-button toast-close-button"
+                id="unactive-error-toast"
+              >
+                <img
+                  class="toast-white-close-img"
+                  src="../img/toast/white-cross.svg"
+                />
+              </button>
+            </div>
+          </div>
+
+          <button
+            class="primary-button button-medium"
+            id="active-success-toast"
+          >
+            Show bottom success Toast
+          </button>
+
+          <div
+            class="toast-card success-toast-dark-background  margin-bottom toast-bottom"
+            style="display: none"
+            id="success-toast-container"
+          >
+            <div class="toast-body">
+              <img
+                class="toast-img-icon sm-avatar"
+                src="../img/toast/white-check.svg"
+              />
+              <h4 class="toast-title">A simple Success toast—check it out!</h4>
+              <button
+                class="icon-button toast-close-button"
+                id="unactive-success-toast"
+              >
+                <img
+                  class="toast-white-close-img"
+                  src="../img/toast/white-cross.svg"
+                />
+              </button>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+                &lt;button<br />
+                class=&quot;secondary-button button-medium&quot;<br />
+                id=&quot;active-error-toast&quot;<br />
+              &gt;<br />
+                Show top error Toast<br />
+              &lt;/button&gt;<br />
+              &lt;div<br />
+                class=&quot;toast-card error-toast-dark-background margin-bottom toast-top&quot;<br />
+                style=&quot;display: none&quot;<br />
+                id=&quot;error-toast-container&quot;<br />
+              &gt;<br />
+                &lt;div class=&quot;toast-body&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;toast-img-icon sm-avatar&quot;<br />
+                    src=&quot;../img/toast/white-cancel.svg&quot;<br />
+                  /&gt;<br />
+                  &lt;h4 class=&quot;toast-title&quot;&gt;A simple Error toast&mdash;check it out!&lt;/h4&gt;<br />
+                  &lt;button<br />
+                    class=&quot;icon-button toast-close-button&quot;<br />
+                    id=&quot;unactive-error-toast&quot;<br />
+                  &gt;<br />
+                    &lt;img<br />
+                      class=&quot;toast-white-close-img&quot;<br />
+                      src=&quot;../img/toast/white-cross.svg&quot;<br />
+                    /&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;button<br />
+                class=&quot;primary-button button-medium&quot;<br />
+                id=&quot;active-success-toast&quot;<br />
+              &gt;<br />
+                Show bottom success Toast<br />
+              &lt;/button&gt;<br />
+              <br />
+              &lt;div<br />
+                class=&quot;toast-card success-toast-dark-background  margin-bottom toast-bottom&quot;<br />
+                style=&quot;display: none&quot;<br />
+                id=&quot;success-toast-container&quot;<br />
+              &gt;<br />
+                &lt;div class=&quot;toast-body&quot;&gt;<br />
+                  &lt;img<br />
+                    class=&quot;toast-img-icon sm-avatar&quot;<br />
+                    src=&quot;../img/toast/white-check.svg&quot;<br />
+                  /&gt;<br />
+                  &lt;h4 class=&quot;toast-title&quot;&gt;A simple Success toast&mdash;check it out!&lt;/h4&gt;<br />
+                  &lt;button<br />
+                    class=&quot;icon-button toast-close-button&quot;<br />
+                    id=&quot;unactive-success-toast&quot;<br />
+                  &gt;<br />
+                    &lt;img<br />
+                      class=&quot;toast-white-close-img&quot;<br />
+                      src=&quot;../img/toast/white-cross.svg&quot;<br />
+                    /&gt;<br />
+                  &lt;/button&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section
+          class="login-section section-container"
+          id="login"
+          style="display: none"
+        >
+          <h2 class="section-heading">Login</h2>
+
+          <h3 class="section-subheading">Usage</h3>
+
+          <div class="login-container">
+            <div class="login-left-container background-property"></div>
+            <div class="login-right-container">
+              <h2>Sign up</h2>
+
+              <div class="input-container">
+                <span class="inside-input-info grey-text">
+                  <span class="input-img"
+                    ><img class="xs-avatar" src="../img/envelope.svg"
+                  /></span>
+                  <span class="input-line">|</span>
+                </span>
+                <input
+                  type="text"
+                  placeholder="Username *"
+                  class="error-input input-field login-input"
+                />
+              </div>
+
+              <div class="input-container">
+                <span class="inside-input-info grey-text">
+                  <span class="input-img"
+                    ><img class="xs-avatar" src="../img/userImg.svg"
+                  /></span>
+                  <span class="input-line">|</span>
+                </span>
+                <input
+                  type="text"
+                  placeholder="Email *"
+                  class="error-input input-field login-input"
+                />
+              </div>
+
+              <div class="input-container">
+                <span class="inside-input-info grey-text">
+                  <span class="input-img"
+                    ><img class="xs-avatar" src="../img/lock.svg"
+                  /></span>
+                  <span class="input-line">|</span>
+                </span>
+                <input
+                  type="text"
+                  placeholder="Password *"
+                  class="error-input input-field login-input"
+                />
+              </div>
+
+              <button class="primary-button button-large login-button">
+                Sign up
+              </button>
+              <p class="grey-text login-or-text">or</p>
+              <button class="button-light-primary button-large">
+                Already a member? Login instead
+              </button>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-markup">
+            &lt;div class=&quot;login-container&quot;&gt;<br />
+            &lt;div class=&quot;login-left-container background-property&quot;&gt;&lt;/div&gt;<br />
+            &lt;div class=&quot;login-right-container&quot;&gt;<br />
+              &lt;h2&gt;Sign up&lt;/h2&gt;<br />
+            <br />
+              &lt;div class=&quot;input-container&quot;&gt;<br />
+                &lt;span class=&quot;inside-input-info grey-text&quot;&gt;<br />
+                  &lt;span class=&quot;input-img&quot;<br />
+                    &gt;&lt;img class=&quot;xs-avatar&quot; src=&quot;../img/envelope.svg&quot;<br />
+                  /&gt;&lt;/span&gt;<br />
+                  &lt;span class=&quot;input-line&quot;&gt;|&lt;/span&gt;<br />
+                &lt;/span&gt;<br />
+                &lt;input<br />
+                  type=&quot;text&quot;<br />
+                  placeholder=&quot;Username *&quot;<br />
+                  class=&quot;error-input input-field login-input&quot;<br />
+                /&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;input-container&quot;&gt;<br />
+                &lt;span class=&quot;inside-input-info grey-text&quot;&gt;<br />
+                  &lt;span class=&quot;input-img&quot;<br />
+                    &gt;&lt;img class=&quot;xs-avatar&quot; src=&quot;../img/userImg.svg&quot;<br />
+                  /&gt;&lt;/span&gt;<br />
+                  &lt;span class=&quot;input-line&quot;&gt;|&lt;/span&gt;<br />
+                &lt;/span&gt;<br />
+                &lt;input<br />
+                  type=&quot;text&quot;<br />
+                  placeholder=&quot;Email *&quot;<br />
+                  class=&quot;error-input input-field login-input&quot;<br />
+                /&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;div class=&quot;input-container&quot;&gt;<br />
+                &lt;span class=&quot;inside-input-info grey-text&quot;&gt;<br />
+                  &lt;span class=&quot;input-img&quot;<br />
+                    &gt;&lt;img class=&quot;xs-avatar&quot; src=&quot;../img/lock.svg&quot;<br />
+                  /&gt;&lt;/span&gt;<br />
+                  &lt;span class=&quot;input-line&quot;&gt;|&lt;/span&gt;<br />
+                &lt;/span&gt;<br />
+                &lt;input<br />
+                  type=&quot;text&quot;<br />
+                  placeholder=&quot;Password *&quot;<br />
+                  class=&quot;error-input input-field login-input&quot;<br />
+                /&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;button class=&quot;primary-button button-large login-button&quot;&gt;<br />
+                Sign up<br />
+              &lt;/button&gt;<br />
+              &lt;p class=&quot;grey-text login-or-text&quot;&gt;or&lt;/p&gt;<br />
+              &lt;button class=&quot;button-light-primary button-large&quot;&gt;<br />
+                Already a member? Login instead<br />
+              &lt;/button&gt;<br />
+            &lt;/div&gt;<br />
+          &lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+
+        <section class="footer">
+          <p class="footer-text">Made by Shilpa Aggarwal</p>
+          <div class="flex">
+            <a href="https://github.com/shilpa3495" target="_blank"
+              ><div
+                class="background-property xs-avatar footer-github-img"
+              ></div
+            ></a>
+            <a href="https://twitter.com/shilpa3495" target="_blank"
+              ><div
+                class="background-property xs-avatar footer-twitter-img"
+              ></div
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/shilpa-aggarwal/"
+              target="_blank"
+              ><div
+                class="background-property xs-avatar footer-linkedin-img"
+              ></div
+            ></a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="../js/prism.js"></script>
+    <script src="../js/main.js"></script>
+    <script></script>
+  </body>
+</html>

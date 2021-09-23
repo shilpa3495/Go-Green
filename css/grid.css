@@ -1,0 +1,29 @@
+.grid-two-items,
+.grid-three-items {
+  display: grid;
+}
+
+.grid-two-items {
+  grid-template-columns: repeat(2, 50%);
+}
+
+.grid-three-items {
+  grid-template-columns: repeat(3, 33.3%);
+}
+
+.grid-two-items-content-div,
+.grid-three-items-content-div {
+  height: 13vh;
+  border: 0.06rem solid var(--primary-color);
+  background: var(--primary-light-color);
+  padding: 0.7rem;
+  color:var(--dark-color);
+}
+
+@media (max-width:414px){
+  .grid-two-items, .grid-three-items{
+    grid-template-columns: 100%;
+    grid-row-gap: 1.2rem;
+  }
+  
+}
